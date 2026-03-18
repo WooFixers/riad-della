@@ -1,0 +1,430 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "rooms": "Chambres",
+    "experiences": "Expériences",
+    "contact": "Nous Contacter",
+    "checkAvailability": "Vérifier les Disponibilités"
+  },
+  "HeroSection": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Vivez l'Âme de Marrakech",
+    "subheading": "Un riad familial et chaleureux au cœur de la Médina, où l'hospitalité marocaine rencontre une culture authentique.",
+    "checkAvailability": "Vérifier les Disponibilités",
+    "discoverRiad": "Découvrir le Riad"
+  },
+  "AboutSection": {
+    "eyebrow": "À Propos du Riad Della",
+    "heading": "Un Havre de Paix au Cœur de la Médina",
+    "body1": "Niché dans les anciennes murailles de la Médina de Marrakech, le Riad Della est une maison d'hôtes familiale où l'hospitalité marocaine traditionnelle prend tout son sens. Derrière une porte discrète se cache un paisible patio—un monde à part de l'énergie vibrante des souks à quelques pas.",
+    "body2": "Nous vous invitons à ralentir, à siroter un thé à la menthe sous les orangers, et à vivre la chaleur d'une culture qui accueille les voyageurs depuis des siècles. Ce n'est pas seulement un endroit où séjourner—c'est un endroit où appartenir."
+  },
+  "ExperienceSection": {
+    "eyebrow": "L'Expérience",
+    "heading": "Ce Qui Vous Attend",
+    "items": {
+      "medina": {
+        "title": "Médina Authentique",
+        "description": "Sortez à pied et découvrez des siècles d'histoire vivante, des ruelles sinueuses et le vrai pouls de Marrakech."
+      },
+      "breakfast": {
+        "title": "Petit-Déjeuner Marocain",
+        "description": "Réveillez-vous avec du msemen fraîchement préparé, du miel local, des fruits de saison et le traditionnel thé à la menthe."
+      },
+      "terrace": {
+        "title": "Terrasse sur les Toits",
+        "description": "Admirez le coucher du soleil sur les toits de la Médina avec des vues s'étendant jusqu'aux montagnes de l'Atlas."
+      },
+      "hospitality": {
+        "title": "Hospitalité du Cœur",
+        "description": "Nous ne sommes pas un hôtel—nous sommes une famille. Laissez-nous partager nos coins préférés de Marrakech avec vous."
+      },
+      "courtyard": {
+        "title": "Patio Paisible",
+        "description": "Le doux murmure de notre fontaine, le parfum des fleurs d'oranger—un sanctuaire au milieu de la ville."
+      },
+      "culture": {
+        "title": "Immersion Culturelle",
+        "description": "Des cours de cuisine aux promenades guidées dans les souks, nous vous aidons à vous connecter aux traditions marocaines."
+      }
+    }
+  },
+  "RoomsSection": {
+    "eyebrow": "Les Chambres",
+    "heading": "Votre Sanctuaire Privé",
+    "subheading": "5 Chambres Disponibles — chacune une expression unique de l'artisanat et du confort marocains.",
+    "viewRoom": "Voir la Chambre",
+    "rooms": {
+      "deluxe": {
+        "name": "Chambre Double Deluxe",
+        "description": "Une chambre chaleureuse et élégante inspirée du design marocain traditionnel, offrant un espace paisible pour se reposer après avoir exploré Marrakech.",
+        "price": "À partir de 120 €"
+      },
+      "bleue": {
+        "name": "Chambre Bleue",
+        "description": "Des accents de zellige traditionnel et des textiles brodés bleus créent un havre serein avec une fenêtre en arc donnant sur la Médina.",
+        "price": "À partir de 145 €"
+      },
+      "superior": {
+        "name": "Chambre Double Supérieure",
+        "description": "Une chambre spacieuse et magnifiquement décorée alliant artisanat marocain et confort moderne.",
+        "price": "À partir de 160 €"
+      },
+      "jardin": {
+        "name": "Suite Jardin",
+        "description": "Une suite spacieuse avec des meubles en cèdre sculptés à la main, des murs en tadelakt et une vue privée sur le jardin du patio.",
+        "price": "À partir de 185 €"
+      },
+      "terrasse": {
+        "name": "Suite Terrasse",
+        "description": "Notre suite sur les toits avec accès à une terrasse privée, des vues panoramiques sur Marrakech et les couchers de soleil sur l'Atlas.",
+        "price": "À partir de 210 €"
+      }
+    }
+  },
+  "DiscoverSection": {
+    "eyebrow": "Découvrir Marrakech",
+    "heading": "Une Ville qui Éveille Tous les Sens",
+    "planVisit": "Planifier Votre Visite",
+    "highlights": {
+      "medina": {
+        "title": "La Médina",
+        "text": "Un site classé au Patrimoine Mondial de l'UNESCO avec ses ruelles labyrinthiques, son architecture séculaire et ses découvertes infinies."
+      },
+      "souks": {
+        "title": "Les Souks",
+        "text": "Un voyage sensoriel à travers les étals d'épices, le cuir artisanal, la ferronnerie délicate et les textiles colorés."
+      },
+      "cuisine": {
+        "title": "Cuisine Marocaine",
+        "text": "Des tajines de rue aux dîners sur les toits, savourez les arômes du safran, du cumin et du citron confit."
+      },
+      "guided": {
+        "title": "Expériences Guidées",
+        "text": "Laissez-nous organiser des visites privées au Jardin Majorelle, aux Tombeaux Saadiens ou dans un hammam traditionnel."
+      }
+    }
+  },
+  "ReviewsSection": {
+    "eyebrow": "Témoignages",
+    "heading": "Les Mots de Nos Hôtes",
+    "reviews": {
+      "sophie": {
+        "quote": "Le Riad Della nous a donné l'impression de rentrer chez nous dans un endroit que nous n'avions jamais visité. Le patio, le petit-déjeuner, la chaleur de la famille—tout était sincère et authentique.",
+        "author": "Sophie & Laurent",
+        "origin": "Lyon, France"
+      },
+      "james": {
+        "quote": "Nous avons séjourné dans de nombreux riads au Maroc, mais aucun n'a capturé l'esprit authentique de la Médina comme celui-ci. Nous sommes repartis en amis, pas en simples clients.",
+        "author": "James & Emma",
+        "origin": "Londres, Royaume-Uni"
+      },
+      "anna": {
+        "quote": "La terrasse au coucher du soleil était inoubliable. Thé à la menthe en main, les montagnes de l'Atlas rougeoyantes—c'est le Marrakech que nous étions venus chercher.",
+        "author": "Anna K.",
+        "origin": "Berlin, Allemagne"
+      }
+    }
+  },
+  "LocationSection": {
+    "eyebrow": "Localisation",
+    "heading": "Au Cœur de la Médina",
+    "description": "Situé dans l'authentique Médina de Marrakech, à quelques pas des souks et des sites historiques. Notre quartier, Zaouia Abbassia, est l'un des coins les plus paisibles de la vieille ville—assez loin de l'agitation touristique, mais proche de tout ce qui compte."
+  },
+  "CtaSection": {
+    "heading": "Votre Escapade Marrakchie Vous Attend",
+    "subheading": "Que vous cherchiez une escapade romantique, un voyage culturel ou simplement un endroit pour faire une pause—nous sommes là pour vous accueillir.",
+    "checkAvailability": "Vérifier les Disponibilités",
+    "contactUs": "Nous Contacter",
+    "emailPrefix": "Ou écrivez-nous à"
+  },
+  "Footer": {
+    "tagline": "Un riad familial et chaleureux au cœur de la Médina où l'hospitalité marocaine rencontre une culture authentique.",
+    "quickLinks": "Liens Rapides",
+    "contact": "Contact",
+    "links": {
+      "about": "À Propos",
+      "experience": "Expérience",
+      "rooms": "Chambres",
+      "discover": "Découvrir",
+      "reviews": "Avis",
+      "location": "Localisation"
+    },
+    "copyright": "© {year} Riad Della. Tous droits réservés."
+  },
+  "ContactHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Contact & Réservations",
+    "subheading": "Vous planifiez votre séjour à Marrakech ? Nous serions ravis de vous accueillir au Riad Della.",
+    "cta": "Envoyer une Demande de Réservation"
+  },
+  "ReservationForm": {
+    "heading": "Demande de Réservation",
+    "subheading": "Remplissez les détails ci-dessous et nous vous répondrons rapidement.",
+    "fullName": "Nom Complet *",
+    "fullNamePlaceholder": "Votre nom complet",
+    "fullNameRequired": "Le nom complet est obligatoire",
+    "email": "Adresse E-mail *",
+    "emailPlaceholder": "vous@email.com",
+    "invalidEmail": "Adresse e-mail invalide",
+    "phone": "Téléphone / WhatsApp",
+    "phonePlaceholder": "+212 ...",
+    "guests": "Nombre de Personnes *",
+    "guestsPlaceholder": "Sélectionner",
+    "guestsRequired": "Le nombre de personnes est obligatoire",
+    "guest": "Personne",
+    "guestsPlural": "Personnes",
+    "checkIn": "Date d'Arrivée *",
+    "checkInRequired": "La date d'arrivée est obligatoire",
+    "checkOut": "Date de Départ *",
+    "checkOutRequired": "La date de départ est obligatoire",
+    "selectDate": "Choisir une date",
+    "roomPreference": "Préférence de Chambre",
+    "noPreference": "Aucune préférence",
+    "chambreBleue": "Chambre Bleue",
+    "suiteJardin": "Suite Jardin",
+    "chambreTerrasse": "Chambre Terrasse",
+    "message": "Demandes Spéciales / Message",
+    "messagePlaceholder": "Demandes spéciales ou questions...",
+    "submit": "Envoyer la Demande de Réservation",
+    "submitted": "Demande Envoyée",
+    "footer": "Nous vous répondrons rapidement pour confirmer les disponibilités et vous aider avec votre réservation.",
+    "toastTitle": "Demande préparée",
+    "toastDescription": "Votre client de messagerie devrait s'ouvrir avec les détails de la réservation."
+  },
+  "DirectContact": {
+    "heading": "Nous Contacter",
+    "addressLabel": "Riad Della",
+    "emailLabel": "E-mail",
+    "emailHelper": "Notre équipe sera ravie de vous aider avec les réservations, les transferts aéroport et les recommandations pour votre séjour à Marrakech."
+  },
+  "ContactMap": {
+    "heading": "Nous Trouver",
+    "description": "Le Riad Della est situé dans la Médina historique de Marrakech, près des souks et des sites culturels."
+  },
+  "TravelAssistance": {
+    "heading": "Besoin d'Aide pour Planifier Votre Séjour ?",
+    "description": "Nous pouvons également vous aider à organiser des transferts aéroport, des excursions et des expériences locales pour rendre votre visite à Marrakech inoubliable.",
+    "items": {
+      "transfers": {
+        "title": "Transferts Aéroport",
+        "desc": "Prise en charge et dépose confortables à l'aéroport Menara de Marrakech."
+      },
+      "excursions": {
+        "title": "Excursions Guidées",
+        "desc": "Journées à l'Atlas, à Essaouira et expériences dans le désert."
+      },
+      "experiences": {
+        "title": "Expériences Locales",
+        "desc": "Cours de cuisine, visites de hammam et ateliers d'artisans."
+      }
+    }
+  },
+  "ContactCta": {
+    "heading": "Votre Escapade Marrakchie Commence Ici",
+    "subheading": "Nous avons hâte de vous accueillir au Riad Della.",
+    "cta": "Nous Contacter pour Réserver"
+  },
+  "ExperiencesHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Découvrez les Expériences de Marrakech",
+    "subheading": "Des souks animés aux traditions marocaines, laissez le Riad Della vous faire vivre la magie de Marrakech.",
+    "cta": "Planifier Votre Séjour"
+  },
+  "ExperiencesIntro": {
+    "eyebrow": "Plus Qu'un Séjour",
+    "heading": "Vivez le Marrakech Authentique",
+    "body": "Au Riad Della, nous croyons que le voyage, c'est avant tout des expériences. De l'exploration du labyrinthe de la Médina à la découverte de la cuisine et des traditions marocaines, nous sommes heureux de vous aider à organiser des moments inoubliables."
+  },
+  "FeaturedExperiences": {
+    "eyebrow": "Sélectionné pour Vous",
+    "heading": "Expériences Phares",
+    "items": {
+      "medina": {
+        "title": "Visite Guidée de la Médina",
+        "description": "Explorez la Médina historique avec un guide local compétent.",
+        "h1": "Ruelles et souks cachés",
+        "h2": "Monuments historiques",
+        "h3": "Ateliers d'artisans locaux"
+      },
+      "cooking": {
+        "title": "Cours de Cuisine Marocaine",
+        "description": "Apprenez à préparer des plats marocains traditionnels.",
+        "h1": "Visite d'un marché local",
+        "h2": "Cuisiner des recettes traditionnelles",
+        "h3": "Dîner sur la terrasse du riad"
+      },
+      "atlas": {
+        "title": "Excursion dans l'Atlas",
+        "description": "Quittez la ville et découvrez la beauté des montagnes de l'Atlas.",
+        "h1": "Villages berbères",
+        "h2": "Paysages de montagne",
+        "h3": "Déjeuner local"
+      },
+      "hammam": {
+        "title": "Hammam & Spa",
+        "description": "Vivez les rituels traditionnels de bien-être marocains.",
+        "h1": "Hammam marocain",
+        "h2": "Massage à l'huile d'argan",
+        "h3": "Expérience de relaxation"
+      },
+      "food": {
+        "title": "Expérience Gastronomique",
+        "description": "Découvrez les saveurs de la cuisine marocaine.",
+        "h1": "Dégustation de street food",
+        "h2": "Plats traditionnels",
+        "h3": "Restaurants locaux"
+      },
+      "desert": {
+        "title": "Excursion dans le Désert",
+        "description": "Pour les voyageurs en quête d'aventure au-delà de la ville.",
+        "h1": "Paysages désertiques",
+        "h2": "Balades à dos de chameau",
+        "h3": "Coucher de soleil dans le désert"
+      }
+    }
+  },
+  "PersonalizedExperiences": {
+    "eyebrow": "À Votre Service",
+    "heading": "Expériences Personnalisées",
+    "description": "Notre équipe sera ravie de vous recommander et d'organiser les meilleures expériences à Marrakech pour rendre votre séjour inoubliable.",
+    "items": {
+      "tailored": {
+        "title": "Sur Mesure",
+        "text": "Partagez vos centres d'intérêt et nous créerons un itinéraire personnalisé pour votre séjour."
+      },
+      "local": {
+        "title": "Connaissance Locale",
+        "text": "Notre équipe partage des conseils d'initiés et des trésors cachés que seuls les locaux connaissent."
+      },
+      "seamless": {
+        "title": "Organisation Sans Faille",
+        "text": "De la réservation au transport, nous gérons chaque détail pour que vous puissiez vous détendre."
+      }
+    }
+  },
+  "ExperiencesCta": {
+    "heading": "Rendez Votre Séjour au Riad Della Inoubliable",
+    "subheading": "Contactez-nous pour organiser des expériences et des activités pendant votre séjour.",
+    "bookStay": "Réserver Votre Séjour",
+    "contactUs": "Nous Contacter"
+  },
+  "RoomsHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Chambres & Suites au Riad Della",
+    "subheading": "Des chambres paisibles conçues dans l'esprit de l'hospitalité marocaine traditionnelle.",
+    "cta": "Vérifier les Disponibilités"
+  },
+  "RoomsIntro": {
+    "eyebrow": "Votre Retraite Privée",
+    "heading": "Confort, Sérénité & Authenticité",
+    "body": "Au Riad Della, chaque chambre est conçue pour offrir confort, calme et authenticité. Inspirées de l'architecture marocaine traditionnelle et décorées de détails artisanaux, nos chambres offrent un havre de paix après l'exploration de la Médina animée de Marrakech."
+  },
+  "RoomShowcase": {
+    "checkAvailability": "Vérifier les Disponibilités",
+    "rooms": {
+      "deluxe": {
+        "name": "Chambre Double Deluxe",
+        "description": "Une chambre chaleureuse et élégante inspirée du design marocain traditionnel, offrant un espace paisible pour se reposer après avoir exploré Marrakech.",
+        "capacity": "2 Personnes",
+        "price": "À partir de 120 €",
+        "f1": "Lit double",
+        "f2": "Salle de bain privée",
+        "f3": "Climatisation",
+        "f4": "Décoration marocaine traditionnelle",
+        "f5": "Wi-Fi gratuit"
+      },
+      "bleue": {
+        "name": "Chambre Bleue",
+        "description": "Des accents de zellige traditionnel et des textiles brodés bleus créent un havre serein avec une fenêtre en arc donnant sur la Médina.",
+        "capacity": "2 Personnes",
+        "price": "À partir de 145 €",
+        "f1": "Lit double",
+        "f2": "Salle de bain privée",
+        "f3": "Climatisation",
+        "f4": "Décoration en zellige",
+        "f5": "Wi-Fi gratuit"
+      },
+      "superior": {
+        "name": "Chambre Double Supérieure",
+        "description": "Une chambre spacieuse et magnifiquement décorée alliant artisanat marocain et confort moderne.",
+        "capacity": "2 Personnes",
+        "price": "À partir de 160 €",
+        "f1": "Lit king size",
+        "f2": "Salle de bain privée",
+        "f3": "Climatisation",
+        "f4": "Coin salon",
+        "f5": "Wi-Fi gratuit"
+      },
+      "jardin": {
+        "name": "Suite Jardin",
+        "description": "Une suite spacieuse avec des meubles en cèdre sculptés à la main, des murs en tadelakt et une vue privée sur le jardin du patio.",
+        "capacity": "2 Personnes",
+        "price": "À partir de 185 €",
+        "f1": "Lit king size",
+        "f2": "Salle de bain privée",
+        "f3": "Climatisation",
+        "f4": "Vue sur le jardin du patio",
+        "f5": "Wi-Fi gratuit"
+      },
+      "terrasse": {
+        "name": "Suite Terrasse",
+        "description": "Notre suite en terrasse avec accès privatif, vues panoramiques sur Marrakech et couchers de soleil sur l'Atlas.",
+        "capacity": "2–3 Personnes",
+        "price": "À partir de 210 €",
+        "f1": "Grand lit",
+        "f2": "Terrasse privée",
+        "f3": "Salle de bain privée",
+        "f4": "Vues panoramiques sur Marrakech",
+        "f5": "Wi-Fi gratuit"
+      }
+    }
+  },
+  "RoomAmenities": {
+    "eyebrow": "Dans Chaque Chambre",
+    "heading": "Équipements",
+    "airConditioning": "Climatisation",
+    "privateBathrooms": "Salles de Bain Privées",
+    "handcraftedDecor": "Décoration Artisanale",
+    "comfortableBedding": "Literie Confortable",
+    "freeWifi": "Wi-Fi Gratuit",
+    "dailyHousekeeping": "Ménage Quotidien",
+    "moroccanBreakfast": "Petit-Déjeuner Marocain"
+  },
+  "RiadAtmosphere": {
+    "eyebrow": "Au-Delà de Votre Chambre",
+    "heading": "L'Atmosphère du Riad",
+    "description": "Au-delà de votre chambre, profitez du paisible patio, de la terrasse sur les toits et de la chaleur humaine qui fait du Riad Della un vrai chez-soi au cœur de Marrakech.",
+    "courtyard": "Le Patio",
+    "terrace": "La Terrasse"
+  },
+  "RoomsCta": {
+    "heading": "Trouvez Votre Chambre Idéale à Marrakech",
+    "subheading": "Nous avons hâte de vous accueillir au Riad Della.",
+    "checkAvailability": "Vérifier les Disponibilités",
+    "contactUs": "Nous Contacter"
+  },
+  "NotFound": {
+    "heading": "404",
+    "message": "Cette page n'existe pas.",
+    "backHome": "Retour à l'Accueil"
+  },
+  "Metadata": {
+    "home": {
+      "title": "Riad Della — Riad Boutique à Marrakech",
+      "description": "Un riad familial au cœur de la Médina de Marrakech. Vivez l'hospitalité marocaine authentique, les patios paisibles et la culture traditionnelle au Riad Della."
+    },
+    "contact": {
+      "title": "Contact & Réservations — Riad Della",
+      "description": "Planifiez votre séjour au Riad Della à Marrakech. Envoyez une demande de réservation ou contactez-nous directement."
+    },
+    "experiences": {
+      "title": "Expériences — Riad Della",
+      "description": "Découvrez des expériences à Marrakech : visites de la Médina, cours de cuisine, excursions dans l'Atlas et bien plus."
+    },
+    "rooms": {
+      "title": "Chambres & Suites — Riad Della",
+      "description": "Explorez nos 5 chambres et suites uniques au Riad Della, chacune décorée avec l'artisanat marocain traditionnel et le confort moderne."
+    }
+  }
+}
