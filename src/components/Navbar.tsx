@@ -18,6 +18,7 @@ const localeLabels: Record<Locale, string> = {
   en: "English",
   fr: "Français",
   es: "Español",
+  it: "Italiano",
 };
 
 const Navbar = () => {
