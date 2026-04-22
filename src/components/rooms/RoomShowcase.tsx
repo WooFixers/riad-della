@@ -2,77 +2,87 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Users, Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "@/lib/navigation";
-import { Users, Bed, Bath, Wind, Wifi, Paintbrush, Sun, Mountain, Armchair, TreePine } from "lucide-react";
-import roomDeluxe from "@/assets/room-deluxe.jpeg";
-import roomBleue from "@/assets/room-chambre-bleue.jpeg";
-import roomSuperior from "@/assets/room-superior.jpeg";
-import roomJardin from "@/assets/room-suite-jardin.jpeg";
-import roomTerrasse from "@/assets/room-terrasse.jpeg";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
+import linaBedroom2 from "@/assets/riad/lina/bedroom-2.webp";
+import linaBedroom3 from "@/assets/riad/lina/bedroom-3.webp";
+import linaBathroom1 from "@/assets/riad/lina/bathroom-1.webp";
+import amelBedroom1 from "@/assets/riad/amel/bedroom-1.webp";
+import amelBedroom2 from "@/assets/riad/amel/bedroom-2.webp";
+import amelBedroom3 from "@/assets/riad/amel/bedroom-3.webp";
+import amelBathroom1 from "@/assets/riad/amel/bathroom-1.webp";
+import amelBathroom2 from "@/assets/riad/amel/bathroom-2.webp";
+import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
+import asmaBedroom2 from "@/assets/riad/asma/bedroom-2.webp";
+import asmaBedroom3 from "@/assets/riad/asma/bedroom-3.webp";
+import asmaBathroom1 from "@/assets/riad/asma/bathroom-1.webp";
 
-type RoomKey = "deluxe" | "bleue" | "superior" | "jardin" | "terrasse";
+type RoomKey = "lina" | "amel" | "asma";
 
-const roomData: {
-  key: RoomKey;
-  image: { src: string };
-  icons: React.ComponentType<{ className?: string }>[];
-}[] = [
-  { key: "deluxe",   image: roomDeluxe,   icons: [Bed, Bath, Wind, Paintbrush, Wifi] },
-  { key: "bleue",    image: roomBleue,    icons: [Bed, Bath, Wind, Paintbrush, Wifi] },
-  { key: "superior", image: roomSuperior, icons: [Bed, Bath, Wind, Armchair, Wifi] },
-  { key: "jardin",   image: roomJardin,   icons: [Bed, Bath, Wind, TreePine, Wifi] },
-  { key: "terrasse", image: roomTerrasse, icons: [Bed, Sun, Bath, Mountain, Wifi] },
+const featureIcons = [Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee];
+const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"] as const;
+
+const roomData: { key: RoomKey; images: { src: string }[] }[] = [
+  { key: "lina", images: [linaBedroom1, linaBedroom2, linaBedroom3, linaBathroom1] },
+  { key: "amel", images: [amelBedroom1, amelBedroom2, amelBedroom3, amelBathroom1, amelBathroom2] },
+  { key: "asma", images: [asmaBedroom1, asmaBedroom2, asmaBedroom3, asmaBathroom1] },
 ];
-
-const featureKeys = ["f1", "f2", "f3", "f4", "f5"] as const;
 
 const RoomShowcase = () => {
   const t = useTranslations("RoomShowcase");
 
   return (
     <section className="pb-24 lg:pb-32">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 space-y-20">
-        {roomData.map(({ key, image, icons }, index) => (
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 space-y-24">
+        {roomData.map(({ key, images }, index) => (
           <motion.div
             key={key}
+            id={`room-${key}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] as const }}
-            className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${index % 2 === 1 ? "lg:direction-rtl" : ""}`}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           >
             <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-              <img
-                src={image.src}
-                alt={t(`rooms.${key}.name`)}
-                className="w-full h-80 lg:h-[28rem] object-cover rounded-2xl"
-                style={{ outline: "1px solid hsl(0 0% 0% / 0.08)", outlineOffset: "-1px" }}
-                loading="lazy"
-              />
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <CarouselContent>
+                  {images.map((img, i) => (
+                    <CarouselItem key={i}>
+                      <img
+                        src={img.src}
+                        alt={t(`rooms.${key}.name`)}
+                        className="w-full h-80 lg:h-[28rem] object-cover rounded-2xl"
+                        style={{ outline: "1px solid hsl(0 0% 0% / 0.08)", outlineOffset: "-1px" }}
+                        loading="lazy"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-3 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="right-3 top-1/2 -translate-y-1/2" />
+              </Carousel>
             </div>
 
             <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-              <div className="flex items-baseline gap-3 mb-2">
-                <h3
-                  className="font-lora font-medium text-foreground leading-tight tracking-tight"
-                  style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
-                >
-                  {t(`rooms.${key}.name`)}
-                </h3>
-              </div>
+              <h3
+                className="font-lora font-medium text-foreground leading-tight tracking-tight mb-2"
+                style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
+              >
+                {t(`rooms.${key}.name`)}
+              </h3>
               <div className="flex items-center gap-2 mb-4">
                 <Users className="w-4 h-4 text-muted-foreground" />
                 <span className="font-sourcesans text-sm text-muted-foreground">{t(`rooms.${key}.capacity`)}</span>
-                <span className="text-muted-foreground">·</span>
-                <span className="font-sourcesans text-sm font-medium text-primary">{t(`rooms.${key}.price`)}</span>
               </div>
               <p className="font-sourcesans text-base leading-[1.7] text-muted-foreground mb-6">
                 {t(`rooms.${key}.description`)}
               </p>
               <ul className="space-y-2.5 mb-8">
                 {featureKeys.map((fk, fi) => {
-                  const Icon = icons[fi];
+                  const Icon = featureIcons[fi];
                   return (
                     <li key={fk} className="flex items-center gap-3 font-sourcesans text-sm text-foreground">
                       <span className="text-primary"><Icon className="w-4 h-4" /></span>
@@ -82,7 +92,7 @@ const RoomShowcase = () => {
                 })}
               </ul>
               <Button variant="outline" asChild>
-                <Link href="/contact">{t("checkAvailability")}</Link>
+                <a href="#room-booking">{t("checkAvailability")}</a>
               </Button>
             </div>
           </motion.div>

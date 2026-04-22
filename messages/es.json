@@ -3,6 +3,9 @@
     "home": "Inicio",
     "rooms": "Habitaciones",
     "experiences": "Experiencias",
+    "golf": "Golf",
+    "transportation": "Transporte",
+    "spa": "Spa & Hammam",
     "contact": "Contáctenos",
     "checkAvailability": "Comprobar Disponibilidad"
   },
@@ -52,33 +55,23 @@
   "RoomsSection": {
     "eyebrow": "Las Habitaciones",
     "heading": "Su Santuario Privado",
-    "subheading": "5 Habitaciones Disponibles — cada una una expresión única de la artesanía y el confort marroquíes.",
+    "subheading": "3 Habitaciones Disponibles — cada una un refugio de confort y encanto marroquí.",
     "viewRoom": "Ver la Habitación",
     "rooms": {
-      "deluxe": {
-        "name": "Habitación Doble Deluxe",
-        "description": "Una habitación acogedora y elegante inspirada en el diseño marroquí tradicional, que ofrece un espacio tranquilo para relajarse tras explorar Marrakech.",
-        "price": "Desde 120 €"
+      "lina": {
+        "name": "Lina",
+        "description": "Una elegante habitación doble con diseño marroquí tradicional, patio privado y todas las comodidades modernas.",
+        "price": "A consultar"
       },
-      "bleue": {
-        "name": "Chambre Bleue",
-        "description": "Detalles de zellige tradicional y textiles bordados en azul crean un retiro sereno con una ventana de arco con vistas a la Medina.",
-        "price": "Desde 145 €"
+      "amel": {
+        "name": "Amel",
+        "description": "Una amplia habitación Double Deluxe con acabados premium, suelo radiante y acceso directo a la piscina climatizada.",
+        "price": "A consultar"
       },
-      "superior": {
-        "name": "Habitación Doble Superior",
-        "description": "Una habitación espaciosa y bellamente decorada que combina la artesanía marroquí con el confort moderno.",
-        "price": "Desde 160 €"
-      },
-      "jardin": {
-        "name": "Suite Jardín",
-        "description": "Una suite espaciosa con muebles de cedro tallados a mano, paredes de tadelakt y una vista privada al jardín del patio.",
-        "price": "Desde 185 €"
-      },
-      "terrasse": {
-        "name": "Suite Terraza",
-        "description": "Nuestra suite en los tejados con acceso a terraza privada, vistas panorámicas de Marrakech y atardeceres sobre el Atlas.",
-        "price": "Desde 210 €"
+      "asma": {
+        "name": "Asma",
+        "description": "Una generosa habitación triple ideal para familias o grupos de amigos, con patio privado, acceso a la azotea y salón con chimenea.",
+        "price": "A consultar"
       }
     }
   },
@@ -181,9 +174,9 @@
     "selectDate": "Seleccionar fecha",
     "roomPreference": "Preferencia de Habitación",
     "noPreference": "Sin preferencia",
-    "chambreBleue": "Chambre Bleue",
-    "suiteJardin": "Suite Jardín",
-    "chambreTerrasse": "Suite Terraza",
+    "roomLina": "Lina — Habitación Doble",
+    "roomAmel": "Amel — Doble Deluxe",
+    "roomAsma": "Asma — Habitación Triple",
     "message": "Solicitudes Especiales / Mensaje",
     "messagePlaceholder": "Solicitudes especiales o preguntas...",
     "submit": "Enviar Solicitud de Reserva",
@@ -321,75 +314,63 @@
     "body": "En Riad Della, cada habitación está diseñada para ofrecer confort, calma y autenticidad. Inspiradas en la arquitectura marroquí tradicional y decoradas con detalles artesanales, nuestras habitaciones ofrecen un refugio tranquilo tras explorar la vibrante Medina de Marrakech."
   },
   "RoomShowcase": {
-    "checkAvailability": "Comprobar Disponibilidad",
+    "checkAvailability": "Reservar esta Habitación",
     "rooms": {
-      "deluxe": {
-        "name": "Habitación Doble Deluxe",
-        "description": "Una habitación acogedora y elegante inspirada en el diseño marroquí tradicional, que ofrece un espacio tranquilo para relajarse tras explorar Marrakech.",
+      "lina": {
+        "name": "Lina — Habitación Doble",
+        "description": "Una elegante habitación doble de inspiración artesanal marroquí. Textiles cálidos, detalles tallados y un patio privado para un descanso plácido.",
         "capacity": "2 Huéspedes",
-        "price": "Desde 120 €",
-        "f1": "Cama doble",
-        "f2": "Baño privado",
-        "f3": "Aire acondicionado",
-        "f4": "Decoración marroquí tradicional",
-        "f5": "Wi-Fi gratuito"
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso a la Azotea",
+        "f6": "Piscina Climatizada",
+        "f7": "Patio Privado",
+        "f8": "Salón Acogedor con Chimenea",
+        "f9": "Desayuno Marroquí Incluido"
       },
-      "bleue": {
-        "name": "Chambre Bleue",
-        "description": "Detalles de zellige tradicional y textiles bordados en azul crean un retiro sereno con una ventana de arco con vistas a la Medina.",
+      "amel": {
+        "name": "Amel — Doble Deluxe",
+        "description": "Una generosa habitación Doble Deluxe con acabados premium y suelo radiante. Disfrute de la piscina climatizada o relájese junto a la chimenea.",
         "capacity": "2 Huéspedes",
-        "price": "Desde 145 €",
-        "f1": "Cama doble",
-        "f2": "Baño privado",
-        "f3": "Aire acondicionado",
-        "f4": "Decoración de zellige",
-        "f5": "Wi-Fi gratuito"
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso a la Azotea",
+        "f6": "Piscina Climatizada",
+        "f7": "Patio Privado",
+        "f8": "Salón Acogedor con Chimenea",
+        "f9": "Desayuno Marroquí Incluido"
       },
-      "superior": {
-        "name": "Habitación Doble Superior",
-        "description": "Una habitación espaciosa y bellamente decorada que combina la artesanía marroquí con el confort moderno.",
-        "capacity": "2 Huéspedes",
-        "price": "Desde 160 €",
-        "f1": "Cama king size",
-        "f2": "Baño privado",
-        "f3": "Aire acondicionado",
-        "f4": "Zona de estar",
-        "f5": "Wi-Fi gratuito"
-      },
-      "jardin": {
-        "name": "Suite Jardín",
-        "description": "Una suite espaciosa con muebles de cedro tallados a mano, paredes de tadelakt y una vista privada al jardín del patio.",
-        "capacity": "2 Huéspedes",
-        "price": "Desde 185 €",
-        "f1": "Cama king size",
-        "f2": "Baño privado",
-        "f3": "Aire acondicionado",
-        "f4": "Vista al jardín del patio",
-        "f5": "Wi-Fi gratuito"
-      },
-      "terrasse": {
-        "name": "Suite Terraza",
-        "description": "Nuestra suite en los tejados con terraza privada, vistas panorámicas de Marrakech y atardeceres sobre el Atlas.",
-        "capacity": "2–3 Huéspedes",
-        "price": "Desde 210 €",
-        "f1": "Cama grande",
-        "f2": "Terraza privada",
-        "f3": "Baño privado",
-        "f4": "Vistas panorámicas de Marrakech",
-        "f5": "Wi-Fi gratuito"
+      "asma": {
+        "name": "Asma — Habitación Triple",
+        "description": "Perfecta para familias o grupos de amigos, Asma ofrece tres camas, patio privado y acceso a la azotea y al salón compartido con chimenea.",
+        "capacity": "3 Huéspedes",
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso a la Azotea",
+        "f6": "Piscina Climatizada",
+        "f7": "Patio Privado",
+        "f8": "Salón Acogedor con Chimenea",
+        "f9": "Desayuno Marroquí Incluido"
       }
     }
   },
   "RoomAmenities": {
     "eyebrow": "En Cada Habitación",
     "heading": "Equipamiento",
-    "airConditioning": "Aire Acondicionado",
-    "privateBathrooms": "Baños Privados",
-    "handcraftedDecor": "Decoración Artesanal",
-    "comfortableBedding": "Ropa de Cama Cómoda",
-    "freeWifi": "Wi-Fi Gratuito",
-    "dailyHousekeeping": "Limpieza Diaria",
-    "moroccanBreakfast": "Desayuno Marroquí"
+    "acHeating": "Aire Acond. & Calefacción",
+    "heatedFloor": "Suelo Radiante",
+    "privateBathroom": "Baño Privado & Ducha",
+    "safeCloset": "Caja Fuerte & Armario",
+    "rooftopAccess": "Acceso a la Azotea",
+    "heatedPool": "Piscina Climatizada",
+    "patio": "Patio Privado",
+    "lounge": "Salón Acogedor & Chimenea"
   },
   "RiadAtmosphere": {
     "eyebrow": "Más Allá de su Habitación",
@@ -403,6 +384,269 @@
     "subheading": "Esperamos darle la bienvenida en Riad Della.",
     "checkAvailability": "Comprobar Disponibilidad",
     "contactUs": "Contáctenos"
+  },
+  "RoomBookingForm": {
+    "heading": "Reservar su Habitación",
+    "subheading": "Envíenos sus fechas y confirmaremos su reserva con prontitud.",
+    "room": "Habitación *",
+    "roomPlaceholder": "Seleccionar habitación",
+    "roomRequired": "Por favor, seleccione una habitación",
+    "roomLina": "Lina — Habitación Doble",
+    "roomAmel": "Amel — Doble Deluxe",
+    "roomAsma": "Asma — Habitación Triple",
+    "fullName": "Nombre Completo *",
+    "fullNamePlaceholder": "Su nombre completo",
+    "fullNameRequired": "El nombre completo es obligatorio",
+    "phone": "Teléfono / WhatsApp *",
+    "phonePlaceholder": "+212 ...",
+    "phoneRequired": "El número de teléfono es obligatorio",
+    "email": "Correo Electrónico *",
+    "emailPlaceholder": "usted@email.com",
+    "invalidEmail": "Dirección de correo no válida",
+    "checkIn": "Fecha de Llegada *",
+    "checkInRequired": "La fecha de llegada es obligatoria",
+    "checkOut": "Fecha de Salida *",
+    "checkOutRequired": "La fecha de salida es obligatoria",
+    "selectDate": "Seleccionar fecha",
+    "specialOccasion": "Ocasión Especial",
+    "noOccasion": "Ninguna",
+    "birthday": "Cumpleaños",
+    "anniversary": "Aniversario",
+    "honeymoon": "Luna de miel",
+    "other": "Otra",
+    "extras": "Extras & Solicitudes Especiales",
+    "extrasPlaceholder": "¿Extras o solicitudes especiales? (traslado al aeropuerto, necesidades dietéticas, decoración romántica…)",
+    "submit": "Enviar Solicitud",
+    "submitted": "Solicitud Enviada",
+    "footer": "Le responderemos en breve para confirmar su reserva en Riad Della.",
+    "toastTitle": "Solicitud de reserva enviada",
+    "toastDescription": "¡Gracias! Nos pondremos en contacto pronto para confirmar su estancia."
+  },
+  "GolfHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Golf en el Corazón de Marruecos",
+    "subheading": "Alójese en un riad boutique y juegue en uno de los mejores campos de Marruecos, a solo 15 minutos.",
+    "cta": "Planifique Su Estancia Golf"
+  },
+  "GolfIntro": {
+    "eyebrow": "La Combinación Perfecta",
+    "heading": "Alojamiento de Lujo, Golf de Alto Nivel",
+    "body": "Riad Della combina la intimidad de un riad marroquí tradicional con el acceso fácil al Golf Royal de Marrakech. Nos encargamos de cada detalle — para que llegue al primer tee relajado y listo para jugar."
+  },
+  "GolfCourse": {
+    "eyebrow": "Golf Royal de Marrakech",
+    "heading": "Un Campo que Vale la Pena Visitar",
+    "description": "Uno de los clubes de golf más prestigiosos de Marruecos, a solo 15 minutos de Riad Della.",
+    "items": {
+      "course": {
+        "title": "Campo de Championship de 18 Hoyos",
+        "text": "Inaugurado en 1923, el Golf Royal de Marrakech es uno de los campos más antiguos y célebres de África, rodeado de olivares y naranjos centenarios."
+      },
+      "distance": {
+        "title": "A 15 Minutos",
+        "text": "Organizamos traslados privados de puerta a puerta — dedique su tiempo a jugar, no a planificar."
+      },
+      "setting": {
+        "title": "Paisajes Impresionantes",
+        "text": "Juegue con las montañas del Atlas como telón de fondo — un escenario único en el mundo."
+      }
+    }
+  },
+  "GolfServices": {
+    "eyebrow": "Nos Encargamos de Todo",
+    "heading": "Nuestros Servicios de Conserjería Golf",
+    "items": {
+      "transport": {
+        "title": "Traslados Privados",
+        "description": "Transporte cómodo y puntual desde el riad al club y de vuelta — en cada partida.",
+        "h1": "Recogida matutina desde Riad Della",
+        "h2": "Traslado de regreso tras su ronda",
+        "h3": "Horarios flexibles según su hora de salida"
+      },
+      "reservations": {
+        "title": "Reserva de Salidas",
+        "description": "Aseguramos sus horas de salida preferidas en el Golf Royal de Marrakech con antelación.",
+        "h1": "Reserva prioritaria a través de nuestros contactos",
+        "h2": "Rondas individuales o paquetes de varios días",
+        "h3": "Asistencia con las green fees"
+      },
+      "equipment": {
+        "title": "Asistencia con el Equipo",
+        "description": "¿Viaja ligero de equipaje? Podemos gestionar el alquiler de palos y los servicios de caddie.",
+        "h1": "Coordinación para el alquiler de palos",
+        "h2": "Recomendaciones de caddies",
+        "h3": "Almacenamiento de sus palos en el riad"
+      },
+      "local": {
+        "title": "Conocimiento Local del Golf",
+        "description": "Nuestro equipo conoce el campo y puede darle consejos para aprovechar al máximo su ronda.",
+        "h1": "Consejos y estrategia para el campo",
+        "h2": "Mejores momentos para jugar",
+        "h3": "Recomendaciones de restaurantes tras la ronda"
+      }
+    }
+  },
+  "GolfCta": {
+    "heading": "¿Listo para Jugar en Marrakech?",
+    "subheading": "Reserve su estancia en Riad Della y déjenos organizar sus vacaciones de golf perfectas.",
+    "bookStay": "Reserve Su Estancia",
+    "contactUs": "Contáctenos"
+  },
+  "SpaHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Restaure. Renueva. Descansa.",
+    "subheading": "Sumérgete en rituales de bienestar marroquíes milenarios — desde la purificación profunda del hammam hasta el toque sanador del masaje con aceite de argán.",
+    "cta": "Reservar un Tratamiento"
+  },
+  "SpaIntro": {
+    "eyebrow": "Rituales Ancestrales, Confort Moderno",
+    "heading": "El Arte del Hammam Marroquí",
+    "body": "El hammam es el corazón de la cultura marroquí — un ritual de limpieza, relajación y renovación practicado durante siglos. En Riad Della le ofrecemos esta tradición en un entorno íntimo y privado, con productos auténticos: savon beldi, guante de kessa, ghassoul y puro aceite de argán del corazón de Marruecos."
+  },
+  "SpaTreatments": {
+    "eyebrow": "Nuestros Tratamientos",
+    "heading": "Menú de Hammam y Masajes",
+    "items": {
+      "hammam": {
+        "title": "Hammam Marroquí Tradicional",
+        "description": "El ritual de purificación completo arraigado en la tradición marroquí. El vapor abre los poros antes de una limpieza profunda con savon beldi y una vigorizante exfoliación con kessa.",
+        "h1": "Aplicación de jabón negro (savon beldi) y vapor",
+        "h2": "Exfoliación corporal completa con guante kessa",
+        "h3": "Mascarilla de ghassoul y enjuague revitalizante"
+      },
+      "argan": {
+        "title": "Masaje con Aceite de Argán",
+        "description": "Un masaje profundamente nutritivo con puro aceite de argán marroquí prensado en frío — el oro líquido que hidrata, suaviza y restaura la piel mientras libera las tensiones musculares.",
+        "h1": "Aceite de argán 100% puro prensado en frío",
+        "h2": "Técnica terapéutica de cuerpo completo",
+        "h3": "Deja la piel profundamente hidratada y luminosa"
+      },
+      "package": {
+        "title": "Pack Hammam & Masaje",
+        "description": "El ritual de bienestar definitivo — un hammam tradicional completo seguido del masaje de su elección. Perfecto para parejas o para una jornada completa de renovación.",
+        "h1": "Ritual de hammam completo incluido",
+        "h2": "Elección entre masaje de argán o masaje relajante",
+        "h3": "Ideal para parejas o como capricho individual"
+      },
+      "massage": {
+        "title": "Masaje Relajante de Cuerpo Completo",
+        "description": "Un masaje suave que libera la tensión con aceites esenciales calmantes — el antídoto perfecto tras un día explorando la Medina o un largo viaje.",
+        "h1": "Presión adaptada a sus preferencias",
+        "h2": "Aceites esenciales calmantes a su elección",
+        "h3": "Disponible en sesiones de 60 o 90 minutos"
+      }
+    }
+  },
+  "SpaHighlights": {
+    "eyebrow": "Por Qué Nuestro Spa",
+    "heading": "Un Ritual que Vale la Pena",
+    "subheading": "Todo en nuestro spa está diseñado para sentirse auténtico, personal y profundamente restaurador.",
+    "items": {
+      "products": {
+        "title": "Productos Marroquíes Auténticos",
+        "description": "Usamos únicamente savon beldi, ghassoul, guantes de kessa y aceite de argán — procedentes de productores tradicionales marroquíes."
+      },
+      "private": {
+        "title": "Entorno Íntimo y Privado",
+        "description": "Su sesión tiene lugar dentro del riad, en un ambiente tranquilo y totalmente privado, lejos del bullicio turístico."
+      },
+      "therapists": {
+        "title": "Terapeutas Experimentados",
+        "description": "Nuestros terapeutas están formados en técnicas tradicionales marroquíes y adaptan cada sesión a sus necesidades y comodidad."
+      },
+      "flexible": {
+        "title": "Fácil de Reservar",
+        "description": "Reserve con antelación o solicite un tratamiento durante su estancia — aceptamos reservas el mismo día según disponibilidad."
+      }
+    }
+  },
+  "SpaCta": {
+    "heading": "¿Listo para Restaurar sus Sentidos?",
+    "subheading": "Contáctenos para organizar su hammam o masaje — nos encargamos de cada detalle para una experiencia impecable.",
+    "book": "Reservar un Tratamiento",
+    "bookStay": "Reservar su Estancia"
+  },
+  "TransportationHero": {
+    "eyebrow": "Riad Della — Marrakech",
+    "heading": "Viaje Sin Complicaciones",
+    "subheading": "Desde la llegada al aeropuerto hasta las excursiones por Marruecos, nos encargamos de cada traslado para que disfrute su estancia al máximo.",
+    "cta": "Organizar un Traslado"
+  },
+  "TransportationIntro": {
+    "eyebrow": "Su Viaje, Nuestra Responsabilidad",
+    "heading": "Traslados Sin Preocupaciones",
+    "body": "En Riad Della creemos que el trayecto forma parte de la experiencia. Llegue al aeropuerto, vaya a un restaurante o explore los paisajes más allá de la ciudad — nuestro servicio de traslados privados le garantiza comodidad, puntualidad y tranquilidad."
+  },
+  "TransportationServices": {
+    "eyebrow": "Lo que Ofrecemos",
+    "heading": "Nuestros Servicios de Traslado",
+    "items": {
+      "shuttle": {
+        "title": "Lanzadera al Aeropuerto",
+        "description": "Una cálida bienvenida empieza antes de llegar al riad. Nuestro conductor le recibe en el aeropuerto Menara, le ayuda con el equipaje y le lleva directamente a nuestra puerta.",
+        "h1": "Recepción personalizada con cartel nominativo",
+        "h2": "Vehículo cómodo y climatizado",
+        "h3": "Disponible a cualquier hora, incluso llegadas nocturnas"
+      },
+      "private": {
+        "title": "Servicio de Coche Privado",
+        "description": "Un conductor y vehículo dedicados a su disposición durante medio día o un día completo. Explore a su ritmo, haga paradas espontáneas y viaje con total privacidad.",
+        "h1": "Conductor dedicado durante toda la salida",
+        "h2": "Itinerario flexible — su ritmo, sus elecciones",
+        "h3": "Perfecto para excursiones de un día y rutas con varias paradas"
+      },
+      "destinations": {
+        "title": "Destinos Seleccionados",
+        "description": "Organizamos regularmente traslados a los lugares más emblemáticos de Marrakech — jardines, paisajes desérticos, pueblos de montaña y restaurantes de lujo.",
+        "h1": "Jardin Majorelle, Desierto Agafay y Atlas",
+        "h2": "Essaouira, La Palmeraie y restaurantes locales",
+        "h3": "Conocemos las mejores rutas y los horarios ideales"
+      },
+      "demand": {
+        "title": "Traslados a Demanda",
+        "description": "¿Necesita un coche con poco tiempo? Lo gestionamos. Desde cenas de última hora hasta excursiones matutinas, nuestro equipo responde rápidamente.",
+        "h1": "Reserva flexible — solicitudes el mismo día bienvenidas",
+        "h2": "Recogidas nocturnas y regresos tardíos",
+        "h3": "Coordinado directamente con nuestro equipo en el riad"
+      }
+    }
+  },
+  "TransportationDestinations": {
+    "eyebrow": "A Dónde le Llevamos",
+    "heading": "Destinos Populares",
+    "subheading": "Algunas de nuestras rutas más solicitadas — solo díganos adónde quiere ir.",
+    "items": {
+      "majorelle": {
+        "name": "Jardin Majorelle",
+        "description": "El icónico jardín azul de Yves Saint Laurent y su museo, a pocos minutos de la Medina."
+      },
+      "agafay": {
+        "name": "Desierto Agafay",
+        "description": "Un paisaje rocoso y lunar a 40 minutos de Marrakech — perfecto para cenas al atardecer y noches de estrellas."
+      },
+      "atlas": {
+        "name": "Montañas del Atlas",
+        "description": "Valles dramáticos, pueblos bereberes y aire de montaña a solo una hora del riad."
+      },
+      "restaurants": {
+        "name": "Restaurantes y Azoteas",
+        "description": "Desde la cocina marroquí tradicional hasta los mejores rooftops contemporáneos — le llevamos y le traemos."
+      },
+      "essaouira": {
+        "name": "Essaouira",
+        "description": "La ciudad costera y ventosa a dos horas de Marrakech, ideal para una escapada de día junto al mar."
+      },
+      "palmeraie": {
+        "name": "La Palmeraie",
+        "description": "El palmeral en las afueras de Marrakech, con paseos en camello, spas de lujo y vistas al atardecer."
+      }
+    }
+  },
+  "TransportationCta": {
+    "heading": "¿Listo para Planificar sus Traslados?",
+    "subheading": "Comparta su itinerario y nos encargaremos de todo — del aeropuerto a la aventura y de vuelta.",
+    "arrange": "Organizar un Traslado",
+    "bookStay": "Reservar su Estancia"
   },
   "NotFound": {
     "heading": "404",
@@ -423,8 +667,16 @@
       "description": "Descubra experiencias en Marrakech: visitas guiadas por la Medina, clases de cocina, excursiones al Atlas y mucho más."
     },
     "rooms": {
-      "title": "Habitaciones & Suites — Riad Della",
-      "description": "Explore nuestras 5 habitaciones y suites únicas en Riad Della, cada una decorada con artesanía marroquí tradicional y confort moderno."
+      "title": "Habitaciones — Riad Della",
+      "description": "Descubra nuestras 3 habitaciones en Riad Della — Lina, Amel y Asma — con suelo radiante, patio privado y acceso a la piscina climatizada."
+    },
+    "transportation": {
+      "title": "Transporte — Riad Della",
+      "description": "Lanzadera al aeropuerto, coches privados y traslados al Agafay, Jardin Majorelle, restaurantes y más. Deje que Riad Della gestione cada trayecto."
+    },
+    "golf": {
+      "title": "Golf en Marrakech — Riad Della",
+      "description": "Alójese en Riad Della y juegue en el Golf Royal de Marrakech, a solo 15 minutos. Organizamos traslados, salidas y todo lo demás."
     }
   }
 }

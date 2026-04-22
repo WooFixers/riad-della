@@ -4,17 +4,17 @@ import RoomsIntro from "@/components/rooms/RoomsIntro";
 import RoomShowcase from "@/components/rooms/RoomShowcase";
 import RoomAmenities from "@/components/rooms/RoomAmenities";
 import RiadAtmosphere from "@/components/rooms/RiadAtmosphere";
-import RoomsCta from "@/components/rooms/RoomsCta";
+import RoomBookingForm from "@/components/rooms/RoomBookingForm";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rooms & Suites",
+  title: "Rooms",
   description:
-    "Explore our 5 unique rooms and suites at Riad Della, each designed with traditional Moroccan craftsmanship and modern comfort.",
+    "Discover our 3 rooms at Riad Della — Lina, Amel, and Asma — each with heated floors, a private patio, and access to the plunging heated pool.",
   openGraph: {
-    title: "Rooms & Suites — Riad Della",
-    description: "Explore our 5 unique rooms and suites at Riad Della, each designed with traditional Moroccan craftsmanship and modern comfort.",
+    title: "Rooms — Riad Della",
+    description: "Discover our 3 rooms at Riad Della — Lina, Amel, and Asma — each with heated floors, a private patio, and access to the plunging heated pool.",
     url: "/rooms",
     type: "website",
   },
@@ -30,7 +30,7 @@ export default function Rooms() {
         <RoomShowcase />
         <RoomAmenities />
         <RiadAtmosphere />
-        <RoomsCta />
+        <RoomBookingForm />
       </main>
       <Footer />
     </>

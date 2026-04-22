@@ -2,16 +2,17 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Wind, Bath, Paintbrush, BedDouble, Wifi, Sparkles, Coffee } from "lucide-react";
+import { Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame } from "lucide-react";
 
 const amenityData = [
-  { key: "airConditioning", icon: Wind },
-  { key: "privateBathrooms", icon: Bath },
-  { key: "handcraftedDecor", icon: Paintbrush },
-  { key: "comfortableBedding", icon: BedDouble },
-  { key: "freeWifi", icon: Wifi },
-  { key: "dailyHousekeeping", icon: Sparkles },
-  { key: "moroccanBreakfast", icon: Coffee },
+  { key: "acHeating", icon: Wind },
+  { key: "heatedFloor", icon: Waves },
+  { key: "privateBathroom", icon: Bath },
+  { key: "safeCloset", icon: Shield },
+  { key: "rooftopAccess", icon: MountainSnow },
+  { key: "heatedPool", icon: Droplets },
+  { key: "patio", icon: Flower2 },
+  { key: "lounge", icon: Flame },
 ] as const;
 
 const container = {

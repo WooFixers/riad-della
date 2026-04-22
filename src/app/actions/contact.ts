@@ -13,19 +13,20 @@ export async function sendReservationEmail(data: any) {
   // The email address that should receive the reservations
   const recipientEmail = process.env.BREVO_RECIPIENT_EMAIL || senderEmail;
 
+  const isRoomBooking = data.source === "rooms-booking-form";
   const htmlContent = `
     <div style="font-family: sans-serif; color: #333;">
-      <h2 style="color: #4A5D3E;">New Reservation Request</h2>
+      <h2 style="color: #4A5D3E;">${isRoomBooking ? "New Room Booking Request" : "New Reservation Request"}</h2>
       <p><strong>Full Name:</strong> ${data.fullName}</p>
       <p><strong>Email:</strong> ${data.email}</p>
       <p><strong>Phone:</strong> ${data.phone || "N/A"}</p>
-      <p><strong>Guests:</strong> ${data.guests}</p>
+      ${isRoomBooking ? `<p><strong>Room:</strong> ${data.room || "N/A"}</p>` : `<p><strong>Guests:</strong> ${data.guests || "N/A"}</p><p><strong>Room Preference:</strong> ${data.roomPreference || "No preference"}</p>`}
       <p><strong>Check-in:</strong> ${data.checkIn}</p>
       <p><strong>Check-out:</strong> ${data.checkOut}</p>
-      <p><strong>Room Preference:</strong> ${data.roomPreference || "No preference"}</p>
+      ${data.specialOccasion && data.specialOccasion !== "none" ? `<p><strong>Special Occasion:</strong> ${data.specialOccasion}</p>` : ""}
       <br/>
-      <p><strong>Extra Message:</strong></p>
-      <p style="white-space: pre-wrap;">${data.message || "None"}</p>
+      <p><strong>${isRoomBooking ? "Extras & Special Requests" : "Extra Message"}:</strong></p>
+      <p style="white-space: pre-wrap;">${(isRoomBooking ? data.extras : data.message) || "None"}</p>
     </div>
   `;
 
@@ -39,7 +40,7 @@ export async function sendReservationEmail(data: any) {
       body: JSON.stringify({
         sender: { name: "Riad Della Website", email: senderEmail },
         to: [{ email: recipientEmail }],
-        subject: `New Reservation Request – ${data.fullName}`,
+        subject: isRoomBooking ? `Room Booking Request – ${data.room} – ${data.fullName}` : `New Reservation Request – ${data.fullName}`,
         htmlContent,
         replyTo: { email: data.email, name: data.fullName },
       }),

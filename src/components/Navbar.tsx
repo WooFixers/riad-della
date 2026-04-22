@@ -27,10 +27,13 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const links = [
-    { label: t("home"),        href: "/" as const },
-    { label: t("rooms"),       href: "/rooms" as const },
-    { label: t("experiences"), href: "/experiences" as const },
-    { label: t("contact"),     href: "/contact" as const },
+    { label: t("home"),           href: "/" as const },
+    { label: t("rooms"),          href: "/rooms" as const },
+    { label: t("experiences"),    href: "/experiences" as const },
+    { label: t("golf"),           href: "/golf" as const },
+    { label: t("transportation"), href: "/transportation" as const },
+    { label: t("spa"),            href: "/spa" as const },
+    { label: t("contact"),        href: "/contact" as const },
   ];
 
   return (

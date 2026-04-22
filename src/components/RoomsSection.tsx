@@ -3,14 +3,13 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import roomDeluxe from "@/assets/room-deluxe.jpeg";
-import roomBleue from "@/assets/room-chambre-bleue.jpeg";
-import roomSuperior from "@/assets/room-superior.jpeg";
-import roomJardin from "@/assets/room-suite-jardin.jpeg";
-import roomTerrasse from "@/assets/room-terrasse.jpeg";
+import { Link } from "@/lib/navigation";
+import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
+import amelBedroom1 from "@/assets/riad/amel/bedroom-1.webp";
+import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
 
-const roomImages = [roomDeluxe, roomBleue, roomSuperior, roomJardin, roomTerrasse];
-const roomKeys = ["deluxe", "bleue", "superior", "jardin", "terrasse"] as const;
+const roomImages = [linaBedroom1, amelBedroom1, asmaBedroom1];
+const roomKeys = ["lina", "amel", "asma"] as const;
 
 const container = {
   hidden: {},
@@ -78,8 +77,8 @@ const RoomsSection = () => {
                 <p className="font-sourcesans text-base leading-[1.7] text-muted-foreground mb-5">
                   {t(`rooms.${key}.description`)}
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  {t("viewRoom")}
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Link href={`/rooms#room-${key}`}>{t("viewRoom")}</Link>
                 </Button>
               </div>
             </motion.div>

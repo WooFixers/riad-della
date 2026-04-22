@@ -202,9 +202,9 @@ const ReservationForm = () => {
                     </FormControl>
                     <SelectContent>
                       <SelectItem value="no-preference">{t("noPreference")}</SelectItem>
-                      <SelectItem value="chambre-bleue">{t("chambreBleue")}</SelectItem>
-                      <SelectItem value="suite-jardin">{t("suiteJardin")}</SelectItem>
-                      <SelectItem value="chambre-terrasse">{t("chambreTerrasse")}</SelectItem>
+                      <SelectItem value="lina">{t("roomLina")}</SelectItem>
+                      <SelectItem value="amel">{t("roomAmel")}</SelectItem>
+                      <SelectItem value="asma">{t("roomAsma")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
