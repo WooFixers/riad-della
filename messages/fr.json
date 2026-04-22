@@ -678,5 +678,32 @@
       "title": "Golf à Marrakech — Riad Della",
       "description": "Séjournez au Riad Della et jouez au Golf Royal de Marrakech, à seulement 15 minutes. Nous organisons transferts, départs et tout le reste."
     }
+  },
+  "BookingDialog": {
+    "title": "Vérifier la disponibilité",
+    "description": "Remplissez vos coordonnées et nous vous répondrons dans les 24 heures.",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Votre nom complet",
+    "fullNameRequired": "Le nom est obligatoire",
+    "phone": "Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78",
+    "phoneRequired": "Le numéro de téléphone est obligatoire",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "checkInRequired": "La date d'arrivée est obligatoire",
+    "checkOutRequired": "La date de départ est obligatoire",
+    "selectDate": "Choisir une date",
+    "guests": "Nombre de personnes",
+    "guestsPlaceholder": "Sélectionner",
+    "guestsRequired": "Veuillez sélectionner le nombre de personnes",
+    "comment": "Commentaires ou demandes spéciales",
+    "commentPlaceholder": "Quelque chose à nous faire savoir ? Occasion spéciale, régime alimentaire, etc.",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours…",
+    "toastTitle": "Demande envoyée !",
+    "toastDescription": "Nous vous contacterons dans les 24 heures pour confirmer la disponibilité."
   }
 }

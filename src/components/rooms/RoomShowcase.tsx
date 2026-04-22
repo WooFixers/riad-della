@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Users, Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BookingDialog } from "@/components/BookingDialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
 import linaBedroom2 from "@/assets/riad/lina/bedroom-2.webp";
@@ -91,9 +92,9 @@ const RoomShowcase = () => {
                   );
                 })}
               </ul>
-              <Button variant="outline" asChild>
-                <a href="#room-booking">{t("checkAvailability")}</a>
-              </Button>
+              <BookingDialog>
+                <Button variant="outline">{t("checkAvailability")}</Button>
+              </BookingDialog>
             </div>
           </motion.div>
         ))}

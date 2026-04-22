@@ -678,5 +678,32 @@
       "title": "Golf in Marrakech — Riad Della",
       "description": "Stay at Riad Della and play Golf Royal de Marrakech, just 15 minutes away. We arrange transfers, tee times, and everything in between."
     }
+  },
+  "BookingDialog": {
+    "title": "Check Availability",
+    "description": "Fill in your details and we'll get back to you within 24 hours.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your full name",
+    "fullNameRequired": "Full name is required",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 234 567 890",
+    "phoneRequired": "Phone number is required",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "invalidEmail": "Please enter a valid email address",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "checkInRequired": "Check-in date is required",
+    "checkOutRequired": "Check-out date is required",
+    "selectDate": "Pick a date",
+    "guests": "Number of Guests",
+    "guestsPlaceholder": "Select guests",
+    "guestsRequired": "Please select the number of guests",
+    "comment": "Comments or Special Requests",
+    "commentPlaceholder": "Anything we should know? Special occasion, dietary needs, etc.",
+    "submit": "Send Request",
+    "submitting": "Sending…",
+    "toastTitle": "Request Sent!",
+    "toastDescription": "We'll be in touch within 24 hours to confirm your availability."
   }
 }

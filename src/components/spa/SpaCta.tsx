@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/lib/navigation";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const SpaCta = () => {
   const t = useTranslations("SpaCta");
@@ -27,9 +28,9 @@ const SpaCta = () => {
             {t("subheading")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Button variant="default" size="lg" asChild>
-              <Link href="/contact">{t("book")}</Link>
-            </Button>
+            <BookingDialog>
+              <Button variant="default" size="lg">{t("book")}</Button>
+            </BookingDialog>
             <Button variant="outline" size="lg" asChild>
               <Link href="/rooms">{t("bookStay")}</Link>
             </Button>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import { Link } from "@/lib/navigation";
+import { BookingDialog } from "@/components/BookingDialog";
 import heroImage from "@/assets/discover-marrakech.jpg";
 
 const GolfHero = () => {
@@ -50,9 +50,9 @@ const GolfHero = () => {
           transition={{ duration: 0.5, delay: 0.3, ease: [0.4, 0, 0.2, 1] as const }}
           className="mt-10"
         >
-          <Button variant="hero" size="lg" asChild>
-            <Link href="/contact">{t("cta")}</Link>
-          </Button>
+          <BookingDialog>
+            <Button variant="hero" size="lg">{t("cta")}</Button>
+          </BookingDialog>
         </motion.div>
       </div>
     </section>

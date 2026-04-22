@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import { BookingDialog } from "@/components/BookingDialog";
 import heroImage from "@/assets/hero-courtyard.jpeg";
 
 const HeroSection = () => {
@@ -49,9 +50,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
         >
-          <Button variant="hero" size="lg">
-            {t("checkAvailability")}
-          </Button>
+          <BookingDialog>
+            <Button variant="hero" size="lg">
+              {t("checkAvailability")}
+            </Button>
+          </BookingDialog>
           <Button variant="heroOutline" size="lg">
             {t("discoverRiad")}
           </Button>

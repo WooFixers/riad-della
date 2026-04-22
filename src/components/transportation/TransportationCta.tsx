@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/lib/navigation";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const TransportationCta = () => {
   const t = useTranslations("TransportationCta");
@@ -27,9 +28,9 @@ const TransportationCta = () => {
             {t("subheading")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Button variant="default" size="lg" asChild>
-              <Link href="/contact">{t("arrange")}</Link>
-            </Button>
+            <BookingDialog>
+              <Button variant="default" size="lg">{t("arrange")}</Button>
+            </BookingDialog>
             <Button variant="outline" size="lg" asChild>
               <Link href="/rooms">{t("bookStay")}</Link>
             </Button>

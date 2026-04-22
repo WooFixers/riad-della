@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import logo from "@/assets/riaddella-logo.jpg";
 import { locales, type Locale } from "@/lib/navigation";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const localeLabels: Record<Locale, string> = {
   en: "English",
@@ -58,9 +59,9 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button variant="default" size="sm" asChild>
-            <Link href="/contact">{t("checkAvailability")}</Link>
-          </Button>
+          <BookingDialog>
+            <Button variant="default" size="sm">{t("checkAvailability")}</Button>
+          </BookingDialog>
 
           {/* Language switcher */}
           <DropdownMenu>
@@ -105,11 +106,11 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button variant="default" size="default" className="w-full mt-4" asChild>
-              <Link href="/contact" onClick={() => setMenuOpen(false)}>
+            <BookingDialog onBeforeOpen={() => setMenuOpen(false)}>
+              <Button variant="default" size="default" className="w-full mt-4">
                 {t("checkAvailability")}
-              </Link>
-            </Button>
+              </Button>
+            </BookingDialog>
             {/* Mobile language switcher */}
             <div className="flex gap-3 pt-2">
               {locales.map((locale) => (

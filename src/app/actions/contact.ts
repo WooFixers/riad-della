@@ -14,19 +14,27 @@ export async function sendReservationEmail(data: any) {
   const recipientEmail = process.env.BREVO_RECIPIENT_EMAIL || senderEmail;
 
   const isRoomBooking = data.source === "rooms-booking-form";
+  const isDialog = data.source === "booking-dialog";
+
+  const guestsLine = isRoomBooking
+    ? `<p><strong>Room:</strong> ${data.room || "N/A"}</p>`
+    : `<p><strong>Guests:</strong> ${data.guests || "N/A"}</p>${!isDialog ? `<p><strong>Room Preference:</strong> ${data.roomPreference || "No preference"}</p>` : ""}`;
+
+  const messageLine = isRoomBooking ? data.extras : data.message;
+
   const htmlContent = `
     <div style="font-family: sans-serif; color: #333;">
-      <h2 style="color: #4A5D3E;">${isRoomBooking ? "New Room Booking Request" : "New Reservation Request"}</h2>
+      <h2 style="color: #4A5D3E;">${isRoomBooking ? "New Room Booking Request" : "New Availability Request"}</h2>
       <p><strong>Full Name:</strong> ${data.fullName}</p>
       <p><strong>Email:</strong> ${data.email}</p>
       <p><strong>Phone:</strong> ${data.phone || "N/A"}</p>
-      ${isRoomBooking ? `<p><strong>Room:</strong> ${data.room || "N/A"}</p>` : `<p><strong>Guests:</strong> ${data.guests || "N/A"}</p><p><strong>Room Preference:</strong> ${data.roomPreference || "No preference"}</p>`}
+      ${guestsLine}
       <p><strong>Check-in:</strong> ${data.checkIn}</p>
       <p><strong>Check-out:</strong> ${data.checkOut}</p>
       ${data.specialOccasion && data.specialOccasion !== "none" ? `<p><strong>Special Occasion:</strong> ${data.specialOccasion}</p>` : ""}
       <br/>
-      <p><strong>${isRoomBooking ? "Extras & Special Requests" : "Extra Message"}:</strong></p>
-      <p style="white-space: pre-wrap;">${(isRoomBooking ? data.extras : data.message) || "None"}</p>
+      <p><strong>${isRoomBooking ? "Extras & Special Requests" : "Message"}:</strong></p>
+      <p style="white-space: pre-wrap;">${messageLine || "None"}</p>
     </div>
   `;
 

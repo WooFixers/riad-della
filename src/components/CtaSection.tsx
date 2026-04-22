@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import { BookingDialog } from "@/components/BookingDialog";
 
 const CtaSection = () => {
   const t = useTranslations("CtaSection");
@@ -26,9 +27,11 @@ const CtaSection = () => {
             {t("subheading")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-            <Button variant="default" size="lg">
-              {t("checkAvailability")}
-            </Button>
+            <BookingDialog>
+              <Button variant="default" size="lg">
+                {t("checkAvailability")}
+              </Button>
+            </BookingDialog>
             <Button variant="outline" size="lg">
               {t("contactUs")}
             </Button>
