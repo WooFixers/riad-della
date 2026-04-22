@@ -33,6 +33,7 @@ const roomData: { key: RoomKey; images: { src: string }[] }[] = [
 
 const RoomShowcase = () => {
   const t = useTranslations("RoomShowcase");
+  const tSection = useTranslations("RoomsSection");
 
   return (
     <section className="pb-24 lg:pb-32">
@@ -74,9 +75,12 @@ const RoomShowcase = () => {
               >
                 {t(`rooms.${key}.name`)}
               </h3>
-              <div className="flex items-center gap-2 mb-4">
-                <Users className="w-4 h-4 text-muted-foreground" />
-                <span className="font-sourcesans text-sm text-muted-foreground">{t(`rooms.${key}.capacity`)}</span>
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-muted-foreground" />
+                  <span className="font-sourcesans text-sm text-muted-foreground">{t(`rooms.${key}.capacity`)}</span>
+                </div>
+                <span className="font-sourcesans text-sm font-medium text-primary">{tSection(`rooms.${key}.price`)}</span>
               </div>
               <p className="font-sourcesans text-base leading-[1.7] text-muted-foreground mb-6">
                 {t(`rooms.${key}.description`)}

@@ -7,7 +7,12 @@
     "transportation": "Transportation",
     "spa": "Spa & Hammam",
     "contact": "Contact Us",
-    "checkAvailability": "Check Availability"
+    "checkAvailability": "Book Now",
+    "discover": "Discover",
+    "experiencesDesc": "Explore Marrakech & local culture",
+    "spaDesc": "Traditional hammam & massage rituals",
+    "golfDesc": "Royal Golf Club, just 15 min away",
+    "transportationDesc": "Smooth airport & city transfers"
   },
   "HeroSection": {
     "eyebrow": "Riad Della — Marrakech",
@@ -61,17 +66,17 @@
       "lina": {
         "name": "Lina",
         "description": "An elegant double room with traditional Moroccan design, a private patio, and all modern comforts.",
-        "price": "On request"
+        "price": "From €150 / night"
       },
       "amel": {
         "name": "Amel",
         "description": "A spacious Double Deluxe with premium finishes, heated floor, and direct access to the plunging heated pool.",
-        "price": "On request"
+        "price": "From €170 / night"
       },
       "asma": {
         "name": "Asma",
         "description": "A generous triple room for families or friends, with a private patio, rooftop access, and a cozy fireplace lounge.",
-        "price": "On request"
+        "price": "From €180 / night"
       }
     }
   },
@@ -506,34 +511,44 @@
   "SpaTreatments": {
     "eyebrow": "Our Treatments",
     "heading": "Hammam & Massage Menu",
+    "hammamSection": "Hammam at Riad Della",
+    "massageSection": "Massage at Riad Della",
     "items": {
-      "hammam": {
-        "title": "Traditional Moroccan Hammam",
-        "description": "The complete purification ritual rooted in Moroccan tradition. Warm steam opens the pores before a deep cleanse with savon beldi and an invigorating kessa exfoliation.",
-        "h1": "Black soap (savon beldi) application & steam",
-        "h2": "Full-body exfoliation with kessa glove",
-        "h3": "Ghassoul clay mask & revitalising rinse"
+      "steamBath": {
+        "title": "Steam Bath",
+        "duration": "15 min",
+        "price": "100 MAD",
+        "description": "The steam bath stimulates pore dilation and promotes sweating, helping to eliminate toxins and impurities accumulated daily. Your skin will be perfectly prepared to receive all treatments and care offered."
       },
-      "argan": {
-        "title": "Argan Oil Massage",
-        "description": "A deeply nourishing massage using pure cold-pressed Moroccan argan oil — liquid gold that hydrates, softens, and restores the skin while melting tension from tired muscles.",
-        "h1": "100% pure cold-pressed argan oil",
-        "h2": "Flowing, therapeutic full-body technique",
-        "h3": "Leaves skin deeply hydrated and luminous"
+      "expressBath": {
+        "title": "Express Bath",
+        "duration": "30 min",
+        "price": "250 MAD",
+        "description": "Discover the traditional Moroccan exfoliation experience, including a full-body cleanse with black soap, followed by a deep scrub using a Kessa glove. Your hair will enjoy an intensive shampoo and a scalp massage, leaving your body silky smooth and your hair shiny."
       },
-      "package": {
-        "title": "Hammam & Massage Package",
-        "description": "The ultimate wellness ritual — a full traditional hammam followed by your choice of massage. Perfect for couples or anyone seeking a complete day of renewal.",
-        "h1": "Full hammam ritual included",
-        "h2": "Choice of argan oil or relaxing massage",
-        "h3": "Ideal for couples or as a solo indulgence"
+      "royalBath": {
+        "title": "Bain Royal Della",
+        "duration": "80 min",
+        "price": "850 MAD",
+        "description": "A complete treatment combining steam and black soap, followed by a scrub with a Kessa glove, a gentle rub with argan soap, a scalp mask, and a hair massage with argan-based serum. A gentle coffee scrub is also included. To finish, your body will be cleansed with a nourishing shower oil."
       },
-      "massage": {
-        "title": "Relaxing Full-Body Massage",
-        "description": "A soothing, tension-releasing massage with calming essential oils — the perfect antidote after a day of exploring the Medina or a long journey.",
-        "h1": "Pressure adapted to your preference",
-        "h2": "Calming essential oils of your choice",
-        "h3": "Available in 60 or 90-minute sessions"
+      "orientalRelax": {
+        "title": "Oriental Relaxation Massage",
+        "duration": "30 / 50 min",
+        "price": "350 / 550 MAD",
+        "description": "Treat your skin to a vitamin E boost with a relaxing argan oil massage. Your body will feel rested and your skin deeply moisturised for an immediate silky-smooth effect."
+      },
+      "tonicMassage": {
+        "title": "Toning Massage",
+        "duration": "45 min",
+        "price": "550 MAD",
+        "description": "Natural and pure, the candle contains plant oils and pure essential oils. These warm, smooth oils deeply nourish the skin to improve texture and sensation. This massage combines gentle effleurage, deep strokes, and broad, flowing, enveloping movements, promoting greater skin elasticity."
+      },
+      "bathMassagePackage": {
+        "title": "Bath & Oriental Massage Package",
+        "duration": "60 min",
+        "price": "650 MAD",
+        "description": "A package designed for your comfort. Enjoy a full express bath — traditional Moroccan black soap cleanse and Kessa glove scrub, plus an intensive scalp shampoo and massage — followed by a relaxing argan oil massage for deeply hydrated, radiant skin."
       }
     }
   },

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { BookingDialog } from "@/components/BookingDialog";
-import heroImage from "@/assets/discover-marrakech.jpg";
+import heroImage from "@/assets/golf-hero.webp";
 
 const GolfHero = () => {
   const t = useTranslations("GolfHero");

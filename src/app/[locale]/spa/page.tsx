@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import SpaHero from "@/components/spa/SpaHero";
 import SpaIntro from "@/components/spa/SpaIntro";
+import SpaGallery from "@/components/spa/SpaGallery";
 import SpaTreatments from "@/components/spa/SpaTreatments";
 import SpaHighlights from "@/components/spa/SpaHighlights";
 import SpaCta from "@/components/spa/SpaCta";
@@ -27,6 +28,7 @@ export default function Spa() {
       <main>
         <SpaHero />
         <SpaIntro />
+        <SpaGallery />
         <SpaTreatments />
         <SpaHighlights />
         <SpaCta />

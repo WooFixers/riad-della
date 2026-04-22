@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { BookingDialog } from "@/components/BookingDialog";
-import heroImage from "@/assets/exp-hammam.jpg";
+import heroImage from "@/assets/riad/spa/spa-2.webp";
 
 const SpaHero = () => {
   const t = useTranslations("SpaHero");

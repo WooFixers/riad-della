@@ -7,7 +7,12 @@
     "transportation": "Transport",
     "spa": "Spa & Hammam",
     "contact": "Nous Contacter",
-    "checkAvailability": "Vérifier les Disponibilités"
+    "checkAvailability": "Réserver",
+    "discover": "Découvrir",
+    "experiencesDesc": "Explorer Marrakech et sa culture",
+    "spaDesc": "Hammam traditionnel & massages",
+    "golfDesc": "Royal Golf Club, à 15 min seulement",
+    "transportationDesc": "Transferts aéroport & ville sans stress"
   },
   "HeroSection": {
     "eyebrow": "Riad Della — Marrakech",
@@ -61,17 +66,17 @@
       "lina": {
         "name": "Lina",
         "description": "Une chambre double élégante au design marocain traditionnel, avec patio privé et tout le confort moderne.",
-        "price": "Sur demande"
+        "price": "À partir de 150 € / nuit"
       },
       "amel": {
         "name": "Amel",
         "description": "Une Double Deluxe spacieuse avec finitions haut de gamme, plancher chauffant et accès direct à la piscine chauffée.",
-        "price": "Sur demande"
+        "price": "À partir de 170 € / nuit"
       },
       "asma": {
         "name": "Asma",
         "description": "Une triple généreuse idéale pour les familles ou groupes d'amis, avec patio privé, accès au toit-terrasse et salon avec cheminée.",
-        "price": "Sur demande"
+        "price": "À partir de 180 € / nuit"
       }
     }
   },
@@ -506,34 +511,44 @@
   "SpaTreatments": {
     "eyebrow": "Nos Soins",
     "heading": "Menu Hammam & Massages",
+    "hammamSection": "Hammam au Riad Della",
+    "massageSection": "Massage au Riad Della",
     "items": {
-      "hammam": {
-        "title": "Hammam Marocain Traditionnel",
-        "description": "Le rituel de purification complet ancré dans la tradition marocaine. La vapeur ouvre les pores avant un soin au savon beldi et une exfoliation revitalisante au gant de kessa.",
-        "h1": "Application de savon beldi & vapeur",
-        "h2": "Exfoliation corps entier au gant de kessa",
-        "h3": "Masque au ghassoul & rinçage revitalisant"
+      "steamBath": {
+        "title": "Bain de Vapeur",
+        "duration": "15 min",
+        "price": "100 MAD",
+        "description": "Le bain de vapeur stimule la dilatation des pores et favorise la transpiration, permettant ainsi d'éliminer les toxines et les impuretés accumulées au quotidien. Votre peau sera parfaitement préparée à recevoir tous les soins proposés."
       },
-      "argan": {
-        "title": "Massage à l'Huile d'Argan",
-        "description": "Un massage profondément nourrissant à la pure huile d'argan pressée à froid — l'or liquide marocain qui hydrate, assouplit et régénère la peau tout en libérant les tensions musculaires.",
-        "h1": "Huile d'argan 100 % pure pressée à froid",
-        "h2": "Technique enveloppante corps entier",
-        "h3": "Laisse la peau profondément hydratée et lumineuse"
+      "expressBath": {
+        "title": "Bain Express",
+        "duration": "30 min",
+        "price": "250 MAD",
+        "description": "Découvrez l'expérience traditionnelle du gommage marocain, comprenant un savonnage complet du corps avec du savon noir, suivi d'un gommage en profondeur au gant de Kessa. Vos cheveux bénéficieront d'un shampoing intensif et d'un massage relaxant du cuir chevelu, pour une peau satinée et des cheveux brillants."
       },
-      "package": {
-        "title": "Forfait Hammam & Massage",
-        "description": "Le rituel bien-être ultime — un hammam traditionnel complet suivi du massage de votre choix. Idéal pour les couples ou pour une journée de ressourcement total.",
-        "h1": "Rituel hammam complet inclus",
-        "h2": "Choix entre massage à l'argan ou massage relaxant",
-        "h3": "Parfait pour les couples ou en solo"
+      "royalBath": {
+        "title": "Bain Royal Della",
+        "duration": "80 min",
+        "price": "850 MAD",
+        "description": "Un soin complet alliant vapeur et savon noir, suivi d'un gommage au gant de Kessa, d'un léger frottage au savon d'argan, d'un masque capillaire et d'un massage des cheveux au sérum à base d'argan. Un léger gommage au café est également inclus. En final, votre corps sera nettoyé avec une huile de douche nourrissante."
       },
-      "massage": {
-        "title": "Massage Corps Entier Relaxant",
-        "description": "Un massage doux et libérateur avec des huiles essentielles apaisantes — l'antidote parfait après une journée à explorer la Médina ou un long voyage.",
-        "h1": "Pression adaptée à vos préférences",
-        "h2": "Huiles essentielles calmantes au choix",
-        "h3": "Disponible en séances de 60 ou 90 minutes"
+      "orientalRelax": {
+        "title": "Détente à l'orientale",
+        "duration": "30 / 50 min",
+        "price": "350 / 550 MAD",
+        "description": "Offrez à votre peau une cure de vitamine E grâce à un massage relaxant à l'huile d'Argan. Votre corps sera reposé et votre peau hydratée en profondeur pour un effet lisse immédiat."
+      },
+      "tonicMassage": {
+        "title": "Massage Tonique",
+        "duration": "45 min",
+        "price": "550 MAD",
+        "description": "À la fois naturelle et pure, la bougie renferme des huiles végétales et des huiles essentielles pures. Ces huiles onctueuses et tièdes nourrissent la peau en profondeur pour améliorer ainsi le toucher et par conséquent le ressenti. Ce massage allie douceur, effleurages, pressions tirées, à des mouvements larges, fluides et enveloppants tout en procurant plus d'élasticité à l'épiderme."
+      },
+      "bathMassagePackage": {
+        "title": "Forfait : Bain & Massage Oriental",
+        "duration": "60 min",
+        "price": "650 MAD",
+        "description": "Un pack conçu pour votre confort. Profitez d'un bain express — gommage marocain traditionnel au savon noir et gant de Kessa, shampoing intensif et massage du cuir chevelu — suivi d'un massage relaxant à l'huile d'argan pour une peau hydratée en profondeur et un effet lisse et éclatant immédiat."
       }
     }
   },
