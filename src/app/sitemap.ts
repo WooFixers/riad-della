@@ -10,6 +10,7 @@ const routes: {
 }[] = [
   { path: "", priority: 1.0, changeFrequency: "weekly" },
   { path: "/rooms", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/gallery", priority: 0.8, changeFrequency: "weekly" },
   { path: "/contact", priority: 0.9, changeFrequency: "monthly" },
   { path: "/spa", priority: 0.8, changeFrequency: "monthly" },
   { path: "/golf", priority: 0.8, changeFrequency: "monthly" },

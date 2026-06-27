@@ -122,6 +122,17 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
+          {/* Gallery */}
+          <Link
+            href="/gallery"
+            className={cn(
+              "font-sourcesans text-sm font-medium tracking-wide transition-colors duration-200 hover:opacity-70",
+              isActive("/gallery") ? "text-primary" : "text-foreground"
+            )}
+          >
+            {t("gallery")}
+          </Link>
+
           {/* Contact */}
           <Link
             href="/contact"
@@ -207,6 +218,18 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+
+            {/* Gallery */}
+            <Link
+              href="/gallery"
+              onClick={() => setMenuOpen(false)}
+              className={cn(
+                "block font-sourcesans text-base py-2 transition-colors",
+                isActive("/gallery") ? "text-primary font-semibold" : "text-foreground hover:text-primary"
+              )}
+            >
+              {t("gallery")}
+            </Link>
 
             {/* Contact */}
             <Link

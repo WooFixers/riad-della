@@ -6,6 +6,7 @@
     "golf": "Golf",
     "transportation": "Transportation",
     "spa": "Spa & Hammam",
+    "gallery": "Gallery",
     "contact": "Contact Us",
     "checkAvailability": "Book Now",
     "discover": "Discover",
@@ -13,6 +14,21 @@
     "spaDesc": "Traditional hammam & massage rituals",
     "golfDesc": "Royal Golf Club, just 15 min away",
     "transportationDesc": "Smooth airport & city transfers"
+  },
+  "GalleryHero": {
+    "eyebrow": "Visual Journey",
+    "heading": "The Spirit of Riad Della",
+    "subheading": "Explore the peaceful corners, authentic details, and warm moments of our boutique hotel in Marrakech."
+  },
+  "GalleryGrid": {
+    "filterAll": "All Photos",
+    "filterRooms": "Rooms & Suites",
+    "filterCommon": "Riad & Terrace",
+    "filterSpa": "Spa & Hammam",
+    "filterFood": "Food",
+    "ctaHeading": "Experience Riad Della in Person",
+    "ctaText": "Book your stay directly with us for the best rate guaranteed and a warm welcome.",
+    "ctaButton": "Book Your Stay"
   },
   "HeroSection": {
     "eyebrow": "Riad Della — Marrakech",
