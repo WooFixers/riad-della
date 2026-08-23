@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "@/hooks/use-toast";
 import { sendReservationEmail } from "@/app/actions/contact";
@@ -104,6 +104,12 @@ export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
           <DialogTitle className="font-lora text-2xl font-medium">{t("title")}</DialogTitle>
           <DialogDescription className="font-sourcesans">{t("description")}</DialogDescription>
         </DialogHeader>
+
+        {/* Direct Booking Advantage Highlight */}
+        <div className="rounded-xl bg-secondary/80 border border-primary/20 p-3.5 flex items-center gap-3 text-xs font-sourcesans text-muted-foreground mt-2">
+          <Sparkles className="w-4 h-4 text-primary shrink-0" />
+          <span className="leading-snug">{t("directBookingPerk")}</span>
+        </div>
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 mt-2">

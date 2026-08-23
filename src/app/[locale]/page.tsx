@@ -16,11 +16,11 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://riaddella.com";
 export const metadata: Metadata = {
   title: "Riad Della — Boutique Riad in the Heart of Marrakech",
   description:
-    "Stay at Riad Della, an intimate 3-room family riad in Marrakech's Medina. Moroccan hammam, heated pool, rooftop terrace & authentic Moroccan hospitality from €150/night.",
+    "Stay at Riad Della, an intimate boutique family riad in Marrakech's Medina. Moroccan hammam, heated pool, rooftop terrace & authentic Moroccan hospitality from 150 €/night.",
   openGraph: {
     title: "Riad Della — Boutique Riad in the Heart of Marrakech",
     description:
-      "An intimate family riad in the heart of Marrakech's Medina — hammam spa, heated pool, rooftop terrace & authentic Moroccan hospitality. From €150/night.",
+      "An intimate family riad in the heart of Marrakech's Medina — hammam spa, heated pool, rooftop terrace & authentic Moroccan hospitality. From 150 €/night.",
     url: "/",
     type: "website",
   },

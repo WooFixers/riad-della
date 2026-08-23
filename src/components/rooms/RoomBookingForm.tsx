@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, ShieldCheck, Car, Sparkles } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -99,6 +99,34 @@ const RoomBookingForm = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.1, ease: [0.4, 0, 0.2, 1] as const }}
         >
+          {/* Direct Booking Guarantee & Perks */}
+          <div className="mb-8 rounded-2xl bg-background/85 backdrop-blur-sm border border-primary/20 p-5 sm:p-6 shadow-[0_2px_12px_-4px_hsl(0_0%_0%/0.06)]">
+            <div className="flex items-center gap-2 mb-4 text-primary font-medium font-lora text-base sm:text-lg">
+              <Sparkles className="w-5 h-5 flex-shrink-0" />
+              <span>{t("directBenefitsTitle")}</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-secondary/60">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary mt-0.5 shrink-0">
+                  <ShieldCheck className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="font-sourcesans text-sm font-semibold text-foreground">{t("bestPriceTitle")}</p>
+                  <p className="font-sourcesans text-xs text-muted-foreground mt-0.5 leading-relaxed">{t("bestPriceSubtitle")}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-secondary/60">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary mt-0.5 shrink-0">
+                  <Car className="w-4 h-4" />
+                </div>
+                <div>
+                  <p className="font-sourcesans text-sm font-semibold text-foreground">{t("transferTitle")}</p>
+                  <p className="font-sourcesans text-xs text-muted-foreground mt-0.5 leading-relaxed">{t("transferSubtitle")}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               {/* Room selection */}
@@ -113,6 +141,7 @@ const RoomBookingForm = () => {
                       <SelectItem value="lina">{t("roomLina")}</SelectItem>
                       <SelectItem value="amel">{t("roomAmel")}</SelectItem>
                       <SelectItem value="asma">{t("roomAsma")}</SelectItem>
+                      <SelectItem value="douiria">{t("roomDouiria")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

@@ -76,7 +76,7 @@
   "RoomsSection": {
     "eyebrow": "Las Habitaciones",
     "heading": "Su Santuario Privado",
-    "subheading": "3 Habitaciones Disponibles — cada una un refugio de confort y encanto marroquí.",
+    "subheading": "4 Habitaciones y Suites Disponibles — cada una un refugio de confort y encanto marroquí.",
     "viewRoom": "Ver la Habitación",
     "rooms": {
       "lina": {
@@ -93,6 +93,11 @@
         "name": "Asma",
         "description": "Una generosa habitación triple ideal para familias o grupos de amigos, con patio privado, acceso a la azotea y salón con chimenea.",
         "price": "Desde 180 € / noche"
+      },
+      "douiria": {
+        "name": "Douiria",
+        "description": "Una suite familiar independiente tradicional de 2 habitaciones para hasta 6 huéspedes, con acceso privado y acceso directo a la terraza.",
+        "price": "Desde 350 € / noche"
       }
     }
   },
@@ -175,6 +180,8 @@
   "ReservationForm": {
     "heading": "Solicitud de Reserva",
     "subheading": "Complete los datos a continuación y le responderemos con prontitud.",
+    "directBenefitsTitle": "Garantía y Ventajas de Reserva Directa",
+    "directBenefitsDescription": "Reservar directamente con nosotros le garantiza el mejor precio sin comisiones, además de traslado privado al aeropuerto gratuito para estancias de 3 o más noches.",
     "fullName": "Nombre Completo *",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre completo es obligatorio",
@@ -198,6 +205,7 @@
     "roomLina": "Lina — Habitación Doble",
     "roomAmel": "Amel — Doble Deluxe",
     "roomAsma": "Asma — Habitación Triple",
+    "roomDouiria": "Douiria — Suite Familiar (2 Habitaciones)",
     "message": "Solicitudes Especiales / Mensaje",
     "messagePlaceholder": "Solicitudes especiales o preguntas...",
     "submit": "Enviar Solicitud de Reserva",
@@ -378,6 +386,20 @@
         "f7": "Patio Privado",
         "f8": "Salón Acogedor con Chimenea",
         "f9": "Desayuno Marroquí Incluido"
+      },
+      "douiria": {
+        "name": "Douiria — Suite Familiar Privada (2 Habitaciones)",
+        "description": "Una tradicional Douiria marroquí que ofrece total independencia con su propio acceso privado y acceso directo a la azotea. Distribuida en un estudio de 2 estancias (una habitación para 4 personas con 1 cama queen + 2 sofás cama, y otra para 2 personas con 1 cama queen), aloja cómodamente hasta 6 personas, siendo la opción ideal para familias.",
+        "capacity": "Hasta 6 Huéspedes (2 Habitaciones)",
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso Directo a la Azotea",
+        "f6": "Acceso a la Piscina Climatizada",
+        "f7": "Entrada y Acceso Privado Independiente",
+        "f8": "2 Habitaciones (2 Camas Queen + 2 Sofás Cama)",
+        "f9": "Desayuno Marroquí Incluido"
       }
     }
   },
@@ -409,12 +431,18 @@
   "RoomBookingForm": {
     "heading": "Reservar su Habitación",
     "subheading": "Envíenos sus fechas y confirmaremos su reserva con prontitud.",
+    "directBenefitsTitle": "Ventajas de Reservar Directamente",
+    "bestPriceTitle": "Mejor Precio Garantizado",
+    "bestPriceSubtitle": "La tarifa más baja garantizada sin comisiones de intermediarios.",
+    "transferTitle": "Traslado al Aeropuerto Gratis",
+    "transferSubtitle": "Traslado privado gratuito en estancias de 3 noches o más.",
     "room": "Habitación *",
     "roomPlaceholder": "Seleccionar habitación",
     "roomRequired": "Por favor, seleccione una habitación",
     "roomLina": "Lina — Habitación Doble",
     "roomAmel": "Amel — Doble Deluxe",
     "roomAsma": "Asma — Habitación Triple",
+    "roomDouiria": "Douiria — Suite Familiar (2 Habitaciones)",
     "fullName": "Nombre Completo *",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre completo es obligatorio",
@@ -698,8 +726,8 @@
       "description": "Descubra experiencias en Marrakech: visitas guiadas por la Medina, clases de cocina, excursiones al Atlas y mucho más."
     },
     "rooms": {
-      "title": "Habitaciones — Riad Della",
-      "description": "Descubra nuestras 3 habitaciones en Riad Della — Lina, Amel y Asma — con suelo radiante, patio privado y acceso a la piscina climatizada."
+      "title": "Habitaciones & Suites — Riad Della",
+      "description": "Descubra nuestras habitaciones y suites en Riad Della — Lina, Amel, Asma y la Suite Familiar Douiria — con suelo radiante, acceso privado y piscina climatizada."
     },
     "transportation": {
       "title": "Transporte — Riad Della",
@@ -713,6 +741,7 @@
   "BookingDialog": {
     "title": "Verificar disponibilidad",
     "description": "Rellene sus datos y nos pondremos en contacto en 24 horas.",
+    "directBookingPerk": "Mejor Precio Garantizado • Traslado al Aeropuerto Gratis a partir de 3 noches reservando directamente con nosotros.",
     "fullName": "Nombre completo",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre es obligatorio",

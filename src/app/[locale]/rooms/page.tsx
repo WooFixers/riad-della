@@ -12,13 +12,13 @@ import { getBreadcrumbSchema, getFAQSchema } from "@/lib/structured-data";
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://riaddella.com";
 
 export const metadata: Metadata = {
-  title: "Rooms",
+  title: "Rooms & Suites",
   description:
-    "3 rooms in Marrakech's Medina — Lina (from €150), Amel Deluxe (from €170), and Asma Triple (from €180). Heated floors, private patio, plunge pool & Moroccan breakfast included.",
+    "4 rooms & suites in Marrakech's Medina — Lina (from 150 €), Amel Deluxe (from 170 €), Asma Triple (from 180 €), and Douiria Family Suite (from 350 €). Heated floors, private patio, plunge pool & Moroccan breakfast included.",
   openGraph: {
-    title: "Rooms at Riad Della — Marrakech Medina",
+    title: "Rooms & Suites at Riad Della — Marrakech Medina",
     description:
-      "3 beautifully appointed rooms in Marrakech's Medina. Heated floors, private patios, plunge pool & Moroccan breakfast included. From €150/night.",
+      "4 beautifully appointed rooms & suites in Marrakech's Medina. Heated floors, private patios, plunge pool & Moroccan breakfast included. From 150 €/night.",
     url: "/rooms",
     type: "website",
   },
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "What rooms are available at Riad Della?",
     answer:
-      "Riad Della has 3 rooms: Lina (Double Room, from €150/night), Amel (Double Deluxe, from €170/night), and Asma (Triple Room, from €180/night). Each room has heated floors, a private bathroom, and access to the heated plunge pool and rooftop terrace.",
+      "Riad Della offers 4 distinctive spaces: Lina (Double Room, from 150 €/night), Amel (Double Deluxe, from 170 €/night), Asma (Triple Room, from 180 €/night), and Douiria (Private Family Suite with 2 rooms sleeping up to 6 guests, private access, and direct terrace access, from 350 €/night). Each space has heated floors, a private bathroom, and access to the heated plunge pool and rooftop terrace.",
   },
   {
     question: "Is breakfast included at Riad Della?",
@@ -43,12 +43,17 @@ const faqs = [
   {
     question: "How many guests can Riad Della accommodate?",
     answer:
-      "Riad Della can accommodate up to 7 guests across 3 rooms. The Lina and Amel rooms each sleep 2, while the Asma Triple Room sleeps up to 3 guests.",
+      "Riad Della can accommodate up to 13 guests across 4 rooms and suites: Lina (2 guests), Amel (2 guests), Asma (3 guests), and the Douiria Family Suite (up to 6 guests across 2 interconnected rooms).",
   },
   {
     question: "What amenities are included in each room?",
     answer:
-      "Every room at Riad Della includes air conditioning, heated floors, a private en-suite bathroom, in-room safe, wardrobe, private patio, access to the heated plunge pool, rooftop terrace, and a cozy fireplace lounge — plus Moroccan breakfast every morning.",
+      "Every room at Riad Della includes air conditioning, heated floors, a private en-suite bathroom, in-room safe, wardrobe, private patio or independent access, access to the heated plunge pool, rooftop terrace, and a cozy fireplace lounge — plus Moroccan breakfast every morning.",
+  },
+  {
+    question: "What are the benefits of booking directly with Riad Della?",
+    answer:
+      "Booking directly with us guarantees the best available price with zero intermediary fees, plus a complimentary private airport transfer for any stay of 3 nights or more.",
   },
 ];
 

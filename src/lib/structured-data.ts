@@ -26,7 +26,7 @@ export function getLodgingBusinessSchema() {
     url: RIAD_DELLA.url,
     email: RIAD_DELLA.email,
     description:
-      "An intimate 3-room family riad in the heart of Marrakech's Medina, offering authentic Moroccan hospitality, a hammam spa, heated plunge pool, rooftop terrace, Moroccan breakfast, and curated experiences.",
+      "An intimate boutique family riad in the heart of Marrakech's Medina, offering authentic Moroccan hospitality, a hammam spa, heated plunge pool, rooftop terrace, Moroccan breakfast, and curated experiences.",
     address: {
       "@type": "PostalAddress",
       ...RIAD_DELLA.address,
@@ -39,7 +39,7 @@ export function getLodgingBusinessSchema() {
     priceRange: "€€",
     currenciesAccepted: "EUR, MAD",
     paymentAccepted: "Cash, Credit Card",
-    numberOfRooms: 3,
+    numberOfRooms: 4,
     hasMap: `https://www.google.com/maps?q=${RIAD_DELLA.geo.latitude},${RIAD_DELLA.geo.longitude}`,
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Heated Plunge Pool", value: true },
@@ -60,7 +60,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Lina — Double Room",
         description:
-          "Traditional Moroccan design with a private patio, heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From €150 per night.",
+          "Traditional Moroccan design with a private patio, heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From 150 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
         offers: {
@@ -77,7 +77,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Amel — Double Deluxe",
         description:
-          "Premium Moroccan finishes, heated floor, direct pool access, private patio, and superior comfort. From €170 per night.",
+          "Premium Moroccan finishes, heated floor, direct pool access, private patio, and superior comfort. From 170 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
         offers: {
@@ -94,7 +94,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Asma — Triple Room",
         description:
-          "Spacious triple room ideal for families or small groups, with private patio, rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From €180 per night.",
+          "Spacious triple room ideal for families or small groups, with private patio, rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From 180 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3 },
         bed: [
           { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
@@ -105,6 +105,26 @@ export function getLodgingBusinessSchema() {
           priceSpecification: {
             "@type": "UnitPriceSpecification",
             price: 180,
+            priceCurrency: "EUR",
+            unitText: "night",
+          },
+        },
+      },
+      {
+        "@type": "HotelRoom",
+        name: "Douiria — Private Family Suite",
+        description:
+          "Traditional Moroccan Douiria suite featuring private independent access, direct rooftop terrace access, and two interconnected rooms accommodating up to 6 guests (2 queen beds and 2 sofa beds). Ideal for families. From 350 € per night.",
+        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 6 },
+        bed: [
+          { "@type": "BedDetails", numberOfBeds: 2, typeOfBed: "Queen" },
+          { "@type": "BedDetails", numberOfBeds: 2, typeOfBed: "Sofa Bed" },
+        ],
+        offers: {
+          "@type": "Offer",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: 350,
             priceCurrency: "EUR",
             unitText: "night",
           },

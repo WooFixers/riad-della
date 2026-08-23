@@ -7,9 +7,10 @@ import { Link } from "@/lib/navigation";
 import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
 import amelBedroom1 from "@/assets/riad/amel/bedroom-1.webp";
 import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
+import douiria1 from "@/assets/riad/douiria/douiria-1.webp";
 
-const roomImages = [linaBedroom1, amelBedroom1, asmaBedroom1];
-const roomKeys = ["lina", "amel", "asma"] as const;
+const roomImages = [linaBedroom1, amelBedroom1, asmaBedroom1, douiria1];
+const roomKeys = ["lina", "amel", "asma", "douiria"] as const;
 
 const container = {
   hidden: {},
@@ -53,7 +54,7 @@ const RoomsSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {roomKeys.map((key, index) => (
             <motion.div

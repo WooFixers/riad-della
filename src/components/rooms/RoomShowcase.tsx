@@ -6,6 +6,7 @@ import { Users, Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flam
 import { Button } from "@/components/ui/button";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
 import linaBedroom2 from "@/assets/riad/lina/bedroom-2.webp";
 import linaBedroom3 from "@/assets/riad/lina/bedroom-3.webp";
@@ -19,8 +20,14 @@ import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
 import asmaBedroom2 from "@/assets/riad/asma/bedroom-2.webp";
 import asmaBedroom3 from "@/assets/riad/asma/bedroom-3.webp";
 import asmaBathroom1 from "@/assets/riad/asma/bathroom-1.webp";
+import douiria1 from "@/assets/riad/douiria/douiria-1.webp";
+import douiria2 from "@/assets/riad/douiria/douiria-2.webp";
+import douiria3 from "@/assets/riad/douiria/douiria-3.webp";
+import douiria4 from "@/assets/riad/douiria/douiria-4.webp";
+import douiria5 from "@/assets/riad/douiria/douiria-5.webp";
+import douiria6 from "@/assets/riad/douiria/douiria-6.webp";
 
-type RoomKey = "lina" | "amel" | "asma";
+type RoomKey = "lina" | "amel" | "asma" | "douiria";
 
 const featureIcons = [Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"] as const;
@@ -29,6 +36,7 @@ const roomData: { key: RoomKey; images: { src: string }[] }[] = [
   { key: "lina", images: [linaBedroom1, linaBedroom2, linaBedroom3, linaBathroom1] },
   { key: "amel", images: [amelBedroom1, amelBedroom2, amelBedroom3, amelBathroom1, amelBathroom2] },
   { key: "asma", images: [asmaBedroom1, asmaBedroom2, asmaBedroom3, asmaBathroom1] },
+  { key: "douiria", images: [douiria1, douiria2, douiria3, douiria4, douiria5, douiria6] },
 ];
 
 const RoomShowcase = () => {
@@ -49,7 +57,17 @@ const RoomShowcase = () => {
             className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           >
             <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-              <Carousel className="w-full" opts={{ loop: true }}>
+              <Carousel
+                className="w-full"
+                opts={{ loop: true }}
+                plugins={[
+                  Autoplay({
+                    delay: 3500,
+                    stopOnInteraction: false,
+                    stopOnMouseEnter: true,
+                  }),
+                ]}
+              >
                 <CarouselContent>
                   {images.map((img, i) => (
                     <CarouselItem key={i}>

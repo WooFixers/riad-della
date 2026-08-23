@@ -14,7 +14,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://riaddella.com";
 export const metadata: Metadata = {
   title: "Contact & Reservations",
   description:
-    "Book your stay at Riad Della in Marrakech. Send a reservation request online or email contact@riaddella.com — we reply within 24 hours. 3 rooms from €150/night.",
+    "Book your stay at Riad Della in Marrakech. Send a reservation request online or email contact@riaddella.com — we reply within 24 hours. Rooms & suites from 150 €/night.",
   openGraph: {
     title: "Contact & Reservations — Riad Della Marrakech",
     description:
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "How far in advance should I book Riad Della?",
     answer:
-      "As Riad Della has only 3 rooms, we recommend booking as early as possible — ideally 4 to 8 weeks in advance. Peak travel periods (November to March and July to August) fill up quickly, so early booking is strongly advised.",
+      "As Riad Della is an intimate boutique riad with limited rooms & suites, we recommend booking as early as possible — ideally 4 to 8 weeks in advance. Peak travel periods (November to March and July to August) fill up quickly, so early booking is strongly advised.",
   },
   {
     question: "What is the email address for Riad Della?",

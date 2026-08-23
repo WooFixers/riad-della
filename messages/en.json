@@ -76,23 +76,28 @@
   "RoomsSection": {
     "eyebrow": "The Rooms",
     "heading": "Your Private Sanctuary",
-    "subheading": "3 Rooms Available — each one a peaceful haven of Moroccan comfort and charm.",
+    "subheading": "4 Rooms & Suites Available — each one a peaceful haven of Moroccan comfort and charm.",
     "viewRoom": "View Room",
     "rooms": {
       "lina": {
         "name": "Lina",
         "description": "An elegant double room with traditional Moroccan design, a private patio, and all modern comforts.",
-        "price": "From €150 / night"
+        "price": "From 150 € / night"
       },
       "amel": {
         "name": "Amel",
         "description": "A spacious Double Deluxe with premium finishes, heated floor, and direct access to the plunging heated pool.",
-        "price": "From €170 / night"
+        "price": "From 170 € / night"
       },
       "asma": {
         "name": "Asma",
         "description": "A generous triple room for families or friends, with a private patio, rooftop access, and a cozy fireplace lounge.",
-        "price": "From €180 / night"
+        "price": "From 180 € / night"
+      },
+      "douiria": {
+        "name": "Douiria",
+        "description": "A traditional independent family suite with 2 rooms sleeping up to 6 guests, private entrance, and direct rooftop terrace access.",
+        "price": "From 350 € / night"
       }
     }
   },
@@ -175,6 +180,8 @@
   "ReservationForm": {
     "heading": "Reservation Request",
     "subheading": "Fill in the details below and we'll get back to you promptly.",
+    "directBenefitsTitle": "Book Direct Guarantee & Perks",
+    "directBenefitsDescription": "Direct bookings guarantee the best available rate with no intermediary fees. Enjoy a complimentary private airport transfer when you stay 3 nights or more.",
     "fullName": "Full Name *",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",
@@ -198,6 +205,7 @@
     "roomLina": "Lina — Double Room",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Triple Room",
+    "roomDouiria": "Douiria — Family Suite (2 Rooms)",
     "message": "Special Requests / Message",
     "messagePlaceholder": "Any special requests or questions...",
     "submit": "Send Reservation Request",
@@ -378,6 +386,20 @@
         "f7": "Private Patio",
         "f8": "Cozy Lounge with Fireplace",
         "f9": "Moroccan Breakfast Included"
+      },
+      "douiria": {
+        "name": "Douiria — Private Family Suite (2 Rooms)",
+        "description": "A traditional Moroccan Douiria offering complete privacy and independence with its own private entrance and direct access to the rooftop terrace. Featuring 2 interconnected rooms (one with 1 queen bed + 2 sofa beds, and the second with 1 queen bed), it comfortably accommodates up to 6 guests — making it ideal for families.",
+        "capacity": "Up to 6 Guests (2 Rooms)",
+        "f1": "AC & Heating",
+        "f2": "Heated Floor",
+        "f3": "Private Bathroom & Shower",
+        "f4": "In-Room Safe & Closet",
+        "f5": "Direct Rooftop Terrace Access",
+        "f6": "Plunging Heated Pool Access",
+        "f7": "Private Independent Entrance",
+        "f8": "2 Rooms (2 Queen + 2 Sofa Beds)",
+        "f9": "Moroccan Breakfast Included"
       }
     }
   },
@@ -409,12 +431,18 @@
   "RoomBookingForm": {
     "heading": "Book Your Room",
     "subheading": "Send us your dates and we'll confirm your reservation promptly.",
+    "directBenefitsTitle": "Direct Booking Advantages",
+    "bestPriceTitle": "Best Price Guaranteed",
+    "bestPriceSubtitle": "Lowest rates guaranteed with zero intermediary fees.",
+    "transferTitle": "Free Airport Transfer",
+    "transferSubtitle": "Complimentary private transfer on stays of 3+ nights.",
     "room": "Room *",
     "roomPlaceholder": "Select a room",
     "roomRequired": "Please select a room",
     "roomLina": "Lina — Double Room",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Triple Room",
+    "roomDouiria": "Douiria — Family Suite (2 Rooms)",
     "fullName": "Full Name *",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",
@@ -698,8 +726,8 @@
       "description": "Discover curated experiences in Marrakech: guided medina tours, cooking classes, Atlas Mountains day trips, and more."
     },
     "rooms": {
-      "title": "Rooms — Riad Della",
-      "description": "Discover our 3 rooms at Riad Della — Lina, Amel, and Asma — each with heated floors, a private patio, and access to the plunging heated pool."
+      "title": "Rooms & Suites — Riad Della",
+      "description": "Discover our rooms and suites at Riad Della — Lina, Amel, Asma, and the Douiria Family Suite — each with heated floors, private access, and pool & terrace access."
     },
     "transportation": {
       "title": "Transportation — Riad Della",
@@ -713,6 +741,7 @@
   "BookingDialog": {
     "title": "Check Availability",
     "description": "Fill in your details and we'll get back to you within 24 hours.",
+    "directBookingPerk": "Best Price Guaranteed • Free Airport Transfer on stays of 3+ nights when booking directly with us.",
     "fullName": "Full Name",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",

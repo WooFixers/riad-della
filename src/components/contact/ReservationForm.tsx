@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, Sparkles } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -107,6 +107,17 @@ const ReservationForm = () => {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.1, ease: [0.4, 0, 0.2, 1] as const }}
         >
+          {/* Direct Booking Advantage Banner */}
+          <div className="mb-8 rounded-2xl bg-secondary/70 border border-primary/20 p-4 sm:p-5 shadow-sm">
+            <div className="flex items-center gap-2 mb-1.5 text-primary font-medium font-lora text-base">
+              <Sparkles className="w-4 h-4 flex-shrink-0" />
+              <span>{t("directBenefitsTitle")}</span>
+            </div>
+            <p className="font-sourcesans text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              {t("directBenefitsDescription")}
+            </p>
+          </div>
+
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -205,6 +216,7 @@ const ReservationForm = () => {
                       <SelectItem value="lina">{t("roomLina")}</SelectItem>
                       <SelectItem value="amel">{t("roomAmel")}</SelectItem>
                       <SelectItem value="asma">{t("roomAsma")}</SelectItem>
+                      <SelectItem value="douiria">{t("roomDouiria")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
