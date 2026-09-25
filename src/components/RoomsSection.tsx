@@ -5,12 +5,13 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/lib/navigation";
 import linaBedroom1 from "@/assets/riad/lina/bedroom-1.webp";
+import mayaBedroom1 from "@/assets/riad/maya/maya-1.webp";
 import amelBedroom1 from "@/assets/riad/amel/bedroom-1.webp";
 import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
-import douiria1 from "@/assets/riad/douiria/douiria-1.webp";
+import dellaBedroom1 from "@/assets/riad/della/della-1.webp";
 
-const roomImages = [linaBedroom1, amelBedroom1, asmaBedroom1, douiria1];
-const roomKeys = ["lina", "amel", "asma", "douiria"] as const;
+const roomImages = [linaBedroom1, mayaBedroom1, amelBedroom1, asmaBedroom1, dellaBedroom1];
+const roomKeys = ["lina", "maya", "amel", "asma", "della"] as const;
 
 const container = {
   hidden: {},
@@ -54,13 +55,13 @@ const RoomsSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="flex flex-wrap justify-center gap-6"
         >
           {roomKeys.map((key, index) => (
             <motion.div
               key={key}
               variants={item}
-              className="bg-secondary rounded-2xl p-2 shadow-[0_0_0_1px_hsl(0_0%_0%/0.05),0_2px_8px_-2px_hsl(0_0%_0%/0.05)] hover:shadow-[0_0_0_1px_hsl(0_0%_0%/0.08),0_8px_24px_-4px_hsl(0_0%_0%/0.1)] transition-shadow duration-300 will-change-transform"
+              className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-secondary rounded-2xl p-2 shadow-[0_0_0_1px_hsl(0_0%_0%/0.05),0_2px_8px_-2px_hsl(0_0%_0%/0.05)] hover:shadow-[0_0_0_1px_hsl(0_0%_0%/0.08),0_8px_24px_-4px_hsl(0_0%_0%/0.1)] transition-shadow duration-300 will-change-transform flex flex-col"
             >
               <img
                 src={roomImages[index].src}
@@ -68,17 +69,19 @@ const RoomsSection = () => {
                 className="w-full h-64 object-cover rounded-xl"
                 style={{ outline: "1px solid hsl(0 0% 0% / 0.1)", outlineOffset: "-1px" }}
               />
-              <div className="p-5">
-                <div className="flex items-baseline justify-between mb-2">
-                  <h3 className="font-lora text-xl font-normal text-foreground leading-tight">
-                    {t(`rooms.${key}.name`)}
-                  </h3>
-                  <span className="font-sourcesans text-sm text-muted-foreground">{t(`rooms.${key}.price`)}</span>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-baseline justify-between mb-2">
+                    <h3 className="font-lora text-xl font-normal text-foreground leading-tight">
+                      {t(`rooms.${key}.name`)}
+                    </h3>
+                    <span className="font-sourcesans text-sm text-muted-foreground">{t(`rooms.${key}.price`)}</span>
+                  </div>
+                  <p className="font-sourcesans text-base leading-[1.7] text-muted-foreground mb-5">
+                    {t(`rooms.${key}.description`)}
+                  </p>
                 </div>
-                <p className="font-sourcesans text-base leading-[1.7] text-muted-foreground mb-5">
-                  {t(`rooms.${key}.description`)}
-                </p>
-                <Button variant="outline" size="sm" className="w-full" asChild>
+                <Button variant="outline" size="sm" className="w-full mt-auto" asChild>
                   <Link href={`/rooms#room-${key}`}>{t("viewRoom")}</Link>
                 </Button>
               </div>

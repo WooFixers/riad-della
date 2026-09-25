@@ -76,28 +76,38 @@
   "RoomsSection": {
     "eyebrow": "Las Habitaciones",
     "heading": "Su Santuario Privado",
-    "subheading": "4 Habitaciones y Suites Disponibles — cada una un refugio de confort y encanto marroquí.",
+    "subheading": "5 Habitaciones y Suites Disponibles — cada una un refugio de confort y encanto marroquí.",
     "viewRoom": "Ver la Habitación",
     "rooms": {
       "lina": {
         "name": "Lina",
         "description": "Una elegante habitación doble con diseño marroquí tradicional, patio privado y todas las comodidades modernas.",
-        "price": "Desde 150 € / noche"
+        "price": "Desde 160 € / noche"
+      },
+      "maya": {
+        "name": "Maya",
+        "description": "Una tranquila habitación doble con artesanía tradicional marroquí, suelo radiante y baño privado en suite.",
+        "price": "Desde 160 € / noche"
       },
       "amel": {
         "name": "Amel",
         "description": "Una amplia habitación Double Deluxe con acabados premium, suelo radiante y acceso directo a la piscina climatizada.",
-        "price": "Desde 170 € / noche"
+        "price": "Desde 180 € / noche"
       },
       "asma": {
         "name": "Asma",
         "description": "Una generosa habitación triple ideal para familias o grupos de amigos, con patio privado, acceso a la azotea y salón con chimenea.",
-        "price": "Desde 180 € / noche"
+        "price": "Desde 200 € / noche"
+      },
+      "della": {
+        "name": "Suite Della",
+        "description": "Una elegante y espaciosa suite con capacidad para hasta 3 huéspedes, con acceso a la azotea, suelo radiante y detalles tradicionales marroquíes.",
+        "price": "Desde 250 € / noche"
       },
       "douiria": {
-        "name": "Douiria",
-        "description": "Una suite familiar independiente tradicional de 2 habitaciones para hasta 6 huéspedes, con acceso privado y acceso directo a la terraza.",
-        "price": "Desde 350 € / noche"
+        "name": "Suite Della",
+        "description": "Una elegante y espaciosa suite con capacidad para hasta 3 huéspedes, con acceso a la azotea, suelo radiante y detalles tradicionales marroquíes.",
+        "price": "Desde 250 € / noche"
       }
     }
   },
@@ -203,9 +213,11 @@
     "roomPreference": "Preferencia de Habitación",
     "noPreference": "Sin preferencia",
     "roomLina": "Lina — Habitación Doble",
+    "roomMaya": "Maya — Habitación Doble",
     "roomAmel": "Amel — Doble Deluxe",
     "roomAsma": "Asma — Habitación Triple",
-    "roomDouiria": "Douiria — Suite Familiar (2 Habitaciones)",
+    "roomDella": "Suite Della (Hasta 3 Huéspedes)",
+    "roomDouiria": "Suite Della (Hasta 3 Huéspedes)",
     "message": "Solicitudes Especiales / Mensaje",
     "messagePlaceholder": "Solicitudes especiales o preguntas...",
     "submit": "Enviar Solicitud de Reserva",
@@ -359,6 +371,20 @@
         "f8": "Salón Acogedor con Chimenea",
         "f9": "Desayuno Marroquí Incluido"
       },
+      "maya": {
+        "name": "Habitación Maya — Habitación Doble",
+        "description": "Un remanso de paz que aúna el estilo tradicional marroquí y el máximo confort moderno. Con suelo radiante, ropa de cama selecta y un ambiente relajante.",
+        "capacity": "2 Huéspedes",
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso a la Azotea",
+        "f6": "Piscina Climatizada",
+        "f7": "Acceso a Patio Privado",
+        "f8": "Salón Acogedor con Chimenea",
+        "f9": "Desayuno Marroquí Incluido"
+      },
       "amel": {
         "name": "Amel — Doble Deluxe",
         "description": "Una generosa habitación Doble Deluxe con acabados premium y suelo radiante. Disfrute de la piscina climatizada o relájese junto a la chimenea.",
@@ -387,18 +413,32 @@
         "f8": "Salón Acogedor con Chimenea",
         "f9": "Desayuno Marroquí Incluido"
       },
-      "douiria": {
-        "name": "Douiria — Suite Familiar Privada (2 Habitaciones)",
-        "description": "Una tradicional Douiria marroquí que ofrece total independencia con su propio acceso privado y acceso directo a la azotea. Distribuida en un estudio de 2 estancias (una habitación para 4 personas con 1 cama queen + 2 sofás cama, y otra para 2 personas con 1 cama queen), aloja cómodamente hasta 6 personas, siendo la opción ideal para familias.",
-        "capacity": "Hasta 6 Huéspedes (2 Habitaciones)",
+      "della": {
+        "name": "Suite Della",
+        "description": "Una suite marroquí espaciosa y refinada con capacidad para hasta 3 huéspedes. Ofrece detalles artesanales de calidad, ropa de cama premium, suelo radiante y acceso directo a la azotea y a la piscina climatizada.",
+        "capacity": "Hasta 3 Huéspedes",
         "f1": "Aire Acondicionado & Calefacción",
         "f2": "Suelo Radiante",
         "f3": "Baño Privado & Ducha",
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso Directo a la Azotea",
         "f6": "Acceso a la Piscina Climatizada",
-        "f7": "Entrada y Acceso Privado Independiente",
-        "f8": "2 Habitaciones (2 Camas Queen + 2 Sofás Cama)",
+        "f7": "Acceso a Patio Privado",
+        "f8": "Suite Espaciosa (Hasta 3 Huéspedes)",
+        "f9": "Desayuno Marroquí Incluido"
+      },
+      "douiria": {
+        "name": "Suite Della",
+        "description": "Una suite marroquí espaciosa y refinada con capacity para hasta 3 huéspedes. Ofrece detalles artesanales de calidad, ropa de cama premium, suelo radiante y acceso directo a la azotea y a la piscina climatizada.",
+        "capacity": "Hasta 3 Huéspedes",
+        "f1": "Aire Acondicionado & Calefacción",
+        "f2": "Suelo Radiante",
+        "f3": "Baño Privado & Ducha",
+        "f4": "Caja Fuerte & Armario",
+        "f5": "Acceso Directo a la Azotea",
+        "f6": "Acceso a la Piscina Climatizada",
+        "f7": "Acceso a Patio Privado",
+        "f8": "Suite Espaciosa (Hasta 3 Huéspedes)",
         "f9": "Desayuno Marroquí Incluido"
       }
     }
@@ -440,9 +480,11 @@
     "roomPlaceholder": "Seleccionar habitación",
     "roomRequired": "Por favor, seleccione una habitación",
     "roomLina": "Lina — Habitación Doble",
+    "roomMaya": "Maya — Habitación Doble",
     "roomAmel": "Amel — Doble Deluxe",
     "roomAsma": "Asma — Habitación Triple",
-    "roomDouiria": "Douiria — Suite Familiar (2 Habitaciones)",
+    "roomDella": "Suite Della (Hasta 3 Huéspedes)",
+    "roomDouiria": "Suite Della (Hasta 3 Huéspedes)",
     "fullName": "Nombre Completo *",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre completo es obligatorio",
@@ -727,7 +769,7 @@
     },
     "rooms": {
       "title": "Habitaciones & Suites — Riad Della",
-      "description": "Descubra nuestras habitaciones y suites en Riad Della — Lina, Amel, Asma y la Suite Familiar Douiria — con suelo radiante, acceso privado y piscina climatizada."
+      "description": "Descubra nuestras habitaciones y suites en Riad Della — Lina, Maya, Amel, Asma y la Suite Della — con suelo radiante, acceso privado y piscina climatizada."
     },
     "transportation": {
       "title": "Transporte — Riad Della",

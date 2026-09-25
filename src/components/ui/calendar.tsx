@@ -36,19 +36,21 @@ function Calendar({
         weekday:
           "text-muted-foreground rounded-md w-9 font-normal text-[0.8rem]",
         week: "flex w-full mt-2",
-        day: "h-9 w-9 text-center text-sm p-0 flex items-center justify-center relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
+        day: "h-9 w-9 text-center text-sm p-0 flex items-center justify-center relative focus-within:relative focus-within:z-20",
         day_button: cn(
           buttonVariants({ variant: "ghost" }),
-          "h-9 w-9 p-0 font-normal aria-selected:opacity-100"
+          "h-9 w-9 p-0 font-normal text-foreground transition-colors hover:bg-muted"
         ),
         selected:
-          "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground text-primary-foreground",
-        today: "bg-accent text-accent-foreground",
+          "[&_button]:!bg-primary [&_button]:!text-primary-foreground [&_button]:!border-primary [&_button]:font-semibold [&_button]:rounded-md",
+        today:
+          "[&_button]:font-bold [&_button]:text-foreground [&_button]:border-2 [&_button]:border-primary/70 [&_button]:bg-primary/10 [&_button]:rounded-md",
         outside:
-          "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
-        disabled: "text-muted-foreground opacity-50",
+          "day-outside opacity-30 [&_button]:text-muted-foreground",
+        disabled:
+          "opacity-30 cursor-not-allowed pointer-events-none [&_button]:text-muted-foreground [&_button]:opacity-40",
         range_middle:
-          "aria-selected:bg-accent aria-selected:text-accent-foreground",
+          "aria-selected:bg-muted aria-selected:text-foreground",
         hidden: "invisible",
         ...classNames,
       }}

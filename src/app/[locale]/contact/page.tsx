@@ -14,7 +14,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://riaddella.com";
 export const metadata: Metadata = {
   title: "Contact & Reservations",
   description:
-    "Book your stay at Riad Della in Marrakech. Send a reservation request online or email contact@riaddella.com — we reply within 24 hours. Rooms & suites from 150 €/night.",
+    "Book your stay at Riad Della in Marrakech. Send a reservation request online or email contact@riaddella.com — we reply within 24 hours. Rooms & suites from 160 €/night.",
   openGraph: {
     title: "Contact & Reservations — Riad Della Marrakech",
     description:

@@ -19,7 +19,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import logo from "@/assets/riaddella-logo.jpg";
+import logo from "@/assets/riad-della-logo.png";
 import { locales, type Locale } from "@/lib/navigation";
 import { BookingDialog } from "@/components/BookingDialog";
 import { cn } from "@/lib/utils";
@@ -56,7 +56,7 @@ const Navbar = () => {
           <img
             src={logo.src}
             alt="Riad Della"
-            className="h-12 lg:h-14 w-auto object-contain brightness-75"
+            className="h-12 lg:h-14 w-auto object-contain brightness-0 opacity-85"
           />
         </Link>
 

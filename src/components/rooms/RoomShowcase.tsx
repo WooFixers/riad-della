@@ -20,23 +20,24 @@ import asmaBedroom1 from "@/assets/riad/asma/bedroom-1.webp";
 import asmaBedroom2 from "@/assets/riad/asma/bedroom-2.webp";
 import asmaBedroom3 from "@/assets/riad/asma/bedroom-3.webp";
 import asmaBathroom1 from "@/assets/riad/asma/bathroom-1.webp";
-import douiria1 from "@/assets/riad/douiria/douiria-1.webp";
-import douiria2 from "@/assets/riad/douiria/douiria-2.webp";
-import douiria3 from "@/assets/riad/douiria/douiria-3.webp";
-import douiria4 from "@/assets/riad/douiria/douiria-4.webp";
-import douiria5 from "@/assets/riad/douiria/douiria-5.webp";
-import douiria6 from "@/assets/riad/douiria/douiria-6.webp";
+import della1 from "@/assets/riad/della/della-1.webp";
+import della2 from "@/assets/riad/della/della-2.webp";
+import dellaBathroom from "@/assets/riad/della/della-bathroom.webp";
+import maya1 from "@/assets/riad/maya/maya-1.webp";
+import maya2 from "@/assets/riad/maya/maya-2.webp";
+import mayaBathroom from "@/assets/riad/maya/bathroom.webp";
 
-type RoomKey = "lina" | "amel" | "asma" | "douiria";
+type RoomKey = "lina" | "maya" | "amel" | "asma" | "della";
 
 const featureIcons = [Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"] as const;
 
 const roomData: { key: RoomKey; images: { src: string }[] }[] = [
   { key: "lina", images: [linaBedroom1, linaBedroom2, linaBedroom3, linaBathroom1] },
+  { key: "maya", images: [maya1, maya2, mayaBathroom] },
   { key: "amel", images: [amelBedroom1, amelBedroom2, amelBedroom3, amelBathroom1, amelBathroom2] },
   { key: "asma", images: [asmaBedroom1, asmaBedroom2, asmaBedroom3, asmaBathroom1] },
-  { key: "douiria", images: [douiria1, douiria2, douiria3, douiria4, douiria5, douiria6] },
+  { key: "della", images: [della1, della2, dellaBathroom] },
 ];
 
 const RoomShowcase = () => {
@@ -56,6 +57,7 @@ const RoomShowcase = () => {
             transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] as const }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           >
+            {key === "della" && <span id="room-douiria" className="sr-only" />}
             <div className={index % 2 === 1 ? "lg:order-2" : ""}>
               <Carousel
                 className="w-full"

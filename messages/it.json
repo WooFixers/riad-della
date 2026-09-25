@@ -76,28 +76,38 @@
   "RoomsSection": {
     "eyebrow": "Le Camere",
     "heading": "Il Vostro Santuario Privato",
-    "subheading": "4 Camere & Suite Disponibili — ognuna un rifugio di comfort e charme marocchino.",
+    "subheading": "5 Camere & Suite Disponibili — ognuna un rifugio di comfort e charme marocchino.",
     "viewRoom": "Visualizza Camera",
     "rooms": {
       "lina": {
         "name": "Lina",
         "description": "Un'elegante camera doppia con design tradizionale marocchino, patio privato e tutti i comfort moderni.",
-        "price": "A partire da 150 € / notte"
+        "price": "A partire da 160 € / notte"
+      },
+      "maya": {
+        "name": "Maya",
+        "description": "Una tranquilla camera matrimoniale con finiture artigianali marocchine, pavimento riscaldato e bagno privato.",
+        "price": "A partire da 160 € / notte"
       },
       "amel": {
         "name": "Amel",
         "description": "Una spaziosa Double Deluxe con finiture di pregio, pavimento riscaldato e accesso diretto alla piscina riscaldata.",
-        "price": "A partire da 170 € / notte"
+        "price": "A partire da 180 € / notte"
       },
       "asma": {
         "name": "Asma",
         "description": "Una generosa tripla ideale per famiglie o gruppi di amici, con patio privato, accesso alla terrazza e salotto con camino.",
-        "price": "A partire da 180 € / notte"
+        "price": "A partire da 200 € / notte"
+      },
+      "della": {
+        "name": "Suite Della",
+        "description": "Un'elegante e spaziosa suite che può accogliere fino a 3 ospiti, con accesso alla terrazza panoramica, pavimento riscaldato e raffinati dettagli marocchini.",
+        "price": "A partire da 250 € / notte"
       },
       "douiria": {
-        "name": "Douiria",
-        "description": "Una suite familiare indipendente tradizionale di 2 ambienti per un massimo di 6 ospiti, con ingresso privato e accesso diretto alla terrazza.",
-        "price": "A partire da 350 € / notte"
+        "name": "Suite Della",
+        "description": "Un'elegante e spaziosa suite che può accogliere fino a 3 ospiti, con accesso alla terrazza panoramica, pavimento riscaldato e raffinati dettagli marocchini.",
+        "price": "A partire da 250 € / notte"
       }
     }
   },
@@ -203,9 +213,11 @@
     "roomPreference": "Preferenza Camera",
     "noPreference": "Nessuna preferenza",
     "roomLina": "Lina — Camera Doppia",
+    "roomMaya": "Maya — Camera Matrimoniale",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Camera Tripla",
-    "roomDouiria": "Douiria — Suite Familiare (2 Camere)",
+    "roomDella": "Suite Della (Fino a 3 Ospiti)",
+    "roomDouiria": "Suite Della (Fino a 3 Ospiti)",
     "message": "Richieste Speciali / Messaggio",
     "messagePlaceholder": "Eventuali richieste speciali o domande...",
     "submit": "Invia Richiesta di Prenotazione",
@@ -359,6 +371,20 @@
         "f8": "Salotto Accogliente con Camino",
         "f9": "Colazione Marocchina Inclusa"
       },
+      "maya": {
+        "name": "Camera Maya — Camera Matrimoniale",
+        "description": "Un rifugio rilassante che unisce l'autentico artigianato marocchino al comfort contemporaneo. Con pavimento riscaldato, biancheria raffinata e un'atmosfera rigenerante.",
+        "capacity": "2 Ospiti",
+        "f1": "Aria Condizionata & Riscaldamento",
+        "f2": "Pavimento Riscaldato",
+        "f3": "Bagno Privato & Doccia",
+        "f4": "Cassaforte & Armadio",
+        "f5": "Accesso alla Terrazza",
+        "f6": "Piscina Riscaldata",
+        "f7": "Accesso Patio Privato",
+        "f8": "Salotto Accogliente con Camino",
+        "f9": "Colazione Marocchina Inclusa"
+      },
       "amel": {
         "name": "Amel — Double Deluxe",
         "description": "Una spaziosa Double Deluxe con finiture di pregio e pavimento riscaldato. Godetevi la piscina riscaldata o rilassatevi vicino al camino.",
@@ -387,18 +413,32 @@
         "f8": "Salotto Accogliente con Camino",
         "f9": "Colazione Marocchina Inclusa"
       },
-      "douiria": {
-        "name": "Douiria — Suite Familiare Privata (2 Camere)",
-        "description": "Una tradizionale Douiria marocchina che offre totale indipendenza con ingresso privato e accesso diretto alla terrazza sul tetto. Composta da 2 ambienti comunicanti (una camera per 4 persone con 1 letto queen + 2 divani letto, e una seconda per 2 persone con 1 letto queen), accoglie comodamente fino a 6 ospiti — perfetta per le famiglie.",
-        "capacity": "Fino a 6 Ospiti (2 Camere)",
+      "della": {
+        "name": "Suite Della",
+        "description": "Una suite marocchina spaziosa e raffinata che può ospitare fino a 3 persone. Offre artigianato curato nei dettagli, letti confortevoli, pavimento riscaldato e accesso diretto alla terrazza panoramica e alla piscina riscaldata.",
+        "capacity": "Fino a 3 Ospiti",
         "f1": "Aria Condizionata & Riscaldamento",
         "f2": "Pavimento Riscaldato",
         "f3": "Bagno Privato & Doccia",
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso Diretto alla Terrazza",
         "f6": "Accesso Piscina Riscaldata",
-        "f7": "Ingresso & Accesso Privato Indipendente",
-        "f8": "2 Camere (2 Letti Queen + 2 Divani Letto)",
+        "f7": "Accesso Patio Privato",
+        "f8": "Suite Spaziosa (Fino a 3 Ospiti)",
+        "f9": "Colazione Marocchina Inclusa"
+      },
+      "douiria": {
+        "name": "Suite Della",
+        "description": "Una suite marocchina spaziosa e raffinata che può ospitare fino a 3 persone. Offre artigianato curato nei dettagli, letti confortevoli, pavimento riscaldato e accesso diretto alla terrazza panoramica e alla piscina riscaldata.",
+        "capacity": "Fino a 3 Ospiti",
+        "f1": "Aria Condizionata & Riscaldamento",
+        "f2": "Pavimento Riscaldato",
+        "f3": "Bagno Privato & Doccia",
+        "f4": "Cassaforte & Armadio",
+        "f5": "Accesso Diretto alla Terrazza",
+        "f6": "Accesso Piscina Riscaldata",
+        "f7": "Accesso Patio Privato",
+        "f8": "Suite Spaziosa (Fino a 3 Ospiti)",
         "f9": "Colazione Marocchina Inclusa"
       }
     }
@@ -440,9 +480,11 @@
     "roomPlaceholder": "Seleziona una camera",
     "roomRequired": "Seleziona una camera",
     "roomLina": "Lina — Camera Doppia",
+    "roomMaya": "Maya — Camera Matrimoniale",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Camera Tripla",
-    "roomDouiria": "Douiria — Suite Familiare (2 Camere)",
+    "roomDella": "Suite Della (Fino a 3 Ospiti)",
+    "roomDouiria": "Suite Della (Fino a 3 Ospiti)",
     "fullName": "Nome Completo *",
     "fullNamePlaceholder": "Il vostro nome completo",
     "fullNameRequired": "Il nome completo è obbligatorio",
@@ -727,7 +769,7 @@
     },
     "rooms": {
       "title": "Camere & Suite — Riad Della",
-      "description": "Scoprite le nostre camere e suite a Riad Della — Lina, Amel, Asma e la Suite Familiare Douiria — con pavimento riscaldato, accesso privato e piscina riscaldata."
+      "description": "Scoprite le nostre camere e suite a Riad Della — Lina, Maya, Amel, Asma e la Suite Della — con pavimento riscaldato, accesso privato e piscina riscaldata."
     },
     "transportation": {
       "title": "Trasporti — Riad Della",

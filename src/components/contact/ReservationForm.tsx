@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { format } from "date-fns";
+import { format, startOfDay } from "date-fns";
 import { CalendarIcon, Sparkles } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,6 +24,8 @@ import { sendReservationEmail } from "@/app/actions/contact";
 const ReservationForm = () => {
   const t = useTranslations("ReservationForm");
   const [submitted, setSubmitted] = useState(false);
+  const [checkInOpen, setCheckInOpen] = useState(false);
+  const [checkOutOpen, setCheckOutOpen] = useState(false);
 
   const formSchema = z.object({
     fullName: z.string().trim().min(1, t("fullNameRequired")).max(100),
@@ -167,7 +169,7 @@ const ReservationForm = () => {
                 <FormField control={form.control} name="checkIn" render={({ field }) => (
                   <FormItem className="flex flex-col">
                     <FormLabel>{t("checkIn")}</FormLabel>
-                    <Popover>
+                    <Popover open={checkInOpen} onOpenChange={setCheckInOpen}>
                       <PopoverTrigger asChild>
                         <FormControl>
                           <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !field.value && "text-muted-foreground")}>
@@ -177,7 +179,26 @@ const ReservationForm = () => {
                         </FormControl>
                       </PopoverTrigger>
                       <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar mode="single" selected={field.value} onSelect={field.onChange} disabled={(date) => date < new Date()} initialFocus className="p-3 pointer-events-auto" />
+                        <Calendar
+                          mode="single"
+                          selected={field.value}
+                          onSelect={(date) => {
+                            field.onChange(date);
+                            if (date) {
+                              setCheckInOpen(false);
+                              const currentCheckOut = form.getValues("checkOut");
+                              if (currentCheckOut && currentCheckOut <= date) {
+                                form.setValue("checkOut", undefined as unknown as Date);
+                              }
+                              setTimeout(() => {
+                                setCheckOutOpen(true);
+                              }, 150);
+                            }
+                          }}
+                          disabled={(date) => date < startOfDay(new Date())}
+                          initialFocus
+                          className="p-3 pointer-events-auto"
+                        />
                       </PopoverContent>
                     </Popover>
                     <FormMessage />
@@ -186,7 +207,7 @@ const ReservationForm = () => {
                 <FormField control={form.control} name="checkOut" render={({ field }) => (
                   <FormItem className="flex flex-col">
                     <FormLabel>{t("checkOut")}</FormLabel>
-                    <Popover>
+                    <Popover open={checkOutOpen} onOpenChange={setCheckOutOpen}>
                       <PopoverTrigger asChild>
                         <FormControl>
                           <Button variant="outline" className={cn("w-full justify-start text-left font-normal", !field.value && "text-muted-foreground")}>
@@ -196,7 +217,26 @@ const ReservationForm = () => {
                         </FormControl>
                       </PopoverTrigger>
                       <PopoverContent className="w-auto p-0" align="start">
-                        <Calendar mode="single" selected={field.value} onSelect={field.onChange} disabled={(date) => date < new Date()} initialFocus className="p-3 pointer-events-auto" />
+                        <Calendar
+                          mode="single"
+                          selected={field.value}
+                          defaultMonth={field.value || form.getValues("checkIn") || new Date()}
+                          onSelect={(date) => {
+                            field.onChange(date);
+                            if (date) {
+                              setCheckOutOpen(false);
+                            }
+                          }}
+                          disabled={(date) => {
+                            const checkIn = form.getValues("checkIn");
+                            if (checkIn) {
+                              return date <= checkIn;
+                            }
+                            return date < startOfDay(new Date());
+                          }}
+                          initialFocus
+                          className="p-3 pointer-events-auto"
+                        />
                       </PopoverContent>
                     </Popover>
                     <FormMessage />
@@ -214,9 +254,10 @@ const ReservationForm = () => {
                     <SelectContent>
                       <SelectItem value="no-preference">{t("noPreference")}</SelectItem>
                       <SelectItem value="lina">{t("roomLina")}</SelectItem>
+                      <SelectItem value="maya">{t("roomMaya")}</SelectItem>
                       <SelectItem value="amel">{t("roomAmel")}</SelectItem>
                       <SelectItem value="asma">{t("roomAsma")}</SelectItem>
-                      <SelectItem value="douiria">{t("roomDouiria")}</SelectItem>
+                      <SelectItem value="della">{t("roomDella")}</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

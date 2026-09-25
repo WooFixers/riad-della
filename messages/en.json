@@ -76,28 +76,38 @@
   "RoomsSection": {
     "eyebrow": "The Rooms",
     "heading": "Your Private Sanctuary",
-    "subheading": "4 Rooms & Suites Available — each one a peaceful haven of Moroccan comfort and charm.",
+    "subheading": "5 Rooms & Suites Available — each one a peaceful haven of Moroccan comfort and charm.",
     "viewRoom": "View Room",
     "rooms": {
       "lina": {
         "name": "Lina",
         "description": "An elegant double room with traditional Moroccan design, a private patio, and all modern comforts.",
-        "price": "From 150 € / night"
+        "price": "From 160 € / night"
+      },
+      "maya": {
+        "name": "Maya",
+        "description": "A peaceful double room with traditional Moroccan craftsmanship, private en-suite bathroom, and heated floor.",
+        "price": "From 160 € / night"
       },
       "amel": {
         "name": "Amel",
         "description": "A spacious Double Deluxe with premium finishes, heated floor, and direct access to the plunging heated pool.",
-        "price": "From 170 € / night"
+        "price": "From 180 € / night"
       },
       "asma": {
         "name": "Asma",
         "description": "A generous triple room for families or friends, with a private patio, rooftop access, and a cozy fireplace lounge.",
-        "price": "From 180 € / night"
+        "price": "From 200 € / night"
+      },
+      "della": {
+        "name": "Suite Della",
+        "description": "An elegant and spacious suite accommodating up to 3 guests, featuring direct rooftop terrace access, heated floors, and authentic Moroccan style.",
+        "price": "From 250 € / night"
       },
       "douiria": {
-        "name": "Douiria",
-        "description": "A traditional independent family suite with 2 rooms sleeping up to 6 guests, private entrance, and direct rooftop terrace access.",
-        "price": "From 350 € / night"
+        "name": "Suite Della",
+        "description": "An elegant and spacious suite accommodating up to 3 guests, featuring direct rooftop terrace access, heated floors, and authentic Moroccan style.",
+        "price": "From 250 € / night"
       }
     }
   },
@@ -203,9 +213,11 @@
     "roomPreference": "Room Preference",
     "noPreference": "No preference",
     "roomLina": "Lina — Double Room",
+    "roomMaya": "Maya — Double Room",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Triple Room",
-    "roomDouiria": "Douiria — Family Suite (2 Rooms)",
+    "roomDella": "Suite Della (Up to 3 Guests)",
+    "roomDouiria": "Suite Della (Up to 3 Guests)",
     "message": "Special Requests / Message",
     "messagePlaceholder": "Any special requests or questions...",
     "submit": "Send Reservation Request",
@@ -359,6 +371,20 @@
         "f8": "Cozy Lounge with Fireplace",
         "f9": "Moroccan Breakfast Included"
       },
+      "maya": {
+        "name": "Room Maya — Double Room",
+        "description": "A tranquil haven combining authentic Moroccan artisanal style with modern comfort. Featuring heated floors, fine bedding, and a calming aesthetic for total relaxation.",
+        "capacity": "2 Guests",
+        "f1": "AC & Heating",
+        "f2": "Heated Floor",
+        "f3": "Private Bathroom & Shower",
+        "f4": "In-Room Safe & Closet",
+        "f5": "Rooftop Terrace Access",
+        "f6": "Plunging Heated Pool",
+        "f7": "Private Patio Access",
+        "f8": "Cozy Lounge with Fireplace",
+        "f9": "Moroccan Breakfast Included"
+      },
       "amel": {
         "name": "Amel — Double Deluxe",
         "description": "A generously proportioned Double Deluxe with premium finishes and a heated floor underfoot. Step outside to enjoy the plunging heated pool or unwind by the fireplace.",
@@ -387,18 +413,32 @@
         "f8": "Cozy Lounge with Fireplace",
         "f9": "Moroccan Breakfast Included"
       },
-      "douiria": {
-        "name": "Douiria — Private Family Suite (2 Rooms)",
-        "description": "A traditional Moroccan Douiria offering complete privacy and independence with its own private entrance and direct access to the rooftop terrace. Featuring 2 interconnected rooms (one with 1 queen bed + 2 sofa beds, and the second with 1 queen bed), it comfortably accommodates up to 6 guests — making it ideal for families.",
-        "capacity": "Up to 6 Guests (2 Rooms)",
+      "della": {
+        "name": "Suite Della",
+        "description": "A spacious Moroccan suite accommodating up to 3 guests with refined artisanal details, plush bedding, heated floors, and supreme comfort. Direct access to the rooftop terrace and heated plunge pool.",
+        "capacity": "Up to 3 Guests",
         "f1": "AC & Heating",
         "f2": "Heated Floor",
         "f3": "Private Bathroom & Shower",
         "f4": "In-Room Safe & Closet",
         "f5": "Direct Rooftop Terrace Access",
         "f6": "Plunging Heated Pool Access",
-        "f7": "Private Independent Entrance",
-        "f8": "2 Rooms (2 Queen + 2 Sofa Beds)",
+        "f7": "Private Patio Access",
+        "f8": "Spacious Suite (Up to 3 Guests)",
+        "f9": "Moroccan Breakfast Included"
+      },
+      "douiria": {
+        "name": "Suite Della",
+        "description": "A spacious Moroccan suite accommodating up to 3 guests with refined artisanal details, plush bedding, heated floors, and supreme comfort. Direct access to the rooftop terrace and heated plunge pool.",
+        "capacity": "Up to 3 Guests",
+        "f1": "AC & Heating",
+        "f2": "Heated Floor",
+        "f3": "Private Bathroom & Shower",
+        "f4": "In-Room Safe & Closet",
+        "f5": "Direct Rooftop Terrace Access",
+        "f6": "Plunging Heated Pool Access",
+        "f7": "Private Patio Access",
+        "f8": "Spacious Suite (Up to 3 Guests)",
         "f9": "Moroccan Breakfast Included"
       }
     }
@@ -440,9 +480,11 @@
     "roomPlaceholder": "Select a room",
     "roomRequired": "Please select a room",
     "roomLina": "Lina — Double Room",
+    "roomMaya": "Maya — Double Room",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Triple Room",
-    "roomDouiria": "Douiria — Family Suite (2 Rooms)",
+    "roomDella": "Suite Della (Up to 3 Guests)",
+    "roomDouiria": "Suite Della (Up to 3 Guests)",
     "fullName": "Full Name *",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",
@@ -727,7 +769,7 @@
     },
     "rooms": {
       "title": "Rooms & Suites — Riad Della",
-      "description": "Discover our rooms and suites at Riad Della — Lina, Amel, Asma, and the Douiria Family Suite — each with heated floors, private access, and pool & terrace access."
+      "description": "Discover our rooms and suites at Riad Della — Lina, Maya, Amel, Asma, and Suite Della — each with heated floors, private access, and pool & terrace access."
     },
     "transportation": {
       "title": "Transportation — Riad Della",

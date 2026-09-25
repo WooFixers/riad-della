@@ -39,7 +39,7 @@ export function getLodgingBusinessSchema() {
     priceRange: "€€",
     currenciesAccepted: "EUR, MAD",
     paymentAccepted: "Cash, Credit Card",
-    numberOfRooms: 4,
+    numberOfRooms: 5,
     hasMap: `https://www.google.com/maps?q=${RIAD_DELLA.geo.latitude},${RIAD_DELLA.geo.longitude}`,
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Heated Plunge Pool", value: true },
@@ -60,14 +60,31 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Lina — Double Room",
         description:
-          "Traditional Moroccan design with a private patio, heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From 150 € per night.",
+          "Traditional Moroccan design with a private patio, heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From 160 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
         offers: {
           "@type": "Offer",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: 150,
+            price: 160,
+            priceCurrency: "EUR",
+            unitText: "night",
+          },
+        },
+      },
+      {
+        "@type": "HotelRoom",
+        name: "Room Maya — Double Room",
+        description:
+          "Serene double room with authentic Moroccan craftsmanship, heated floor, en-suite bathroom, and courtyard pool access. Perfect for couples. From 160 € per night.",
+        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
+        bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
+        offers: {
+          "@type": "Offer",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: 160,
             priceCurrency: "EUR",
             unitText: "night",
           },
@@ -77,29 +94,9 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Amel — Double Deluxe",
         description:
-          "Premium Moroccan finishes, heated floor, direct pool access, private patio, and superior comfort. From 170 € per night.",
+          "Premium Moroccan finishes, heated floor, direct pool access, private patio, and superior comfort. From 180 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
-        offers: {
-          "@type": "Offer",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: 170,
-            priceCurrency: "EUR",
-            unitText: "night",
-          },
-        },
-      },
-      {
-        "@type": "HotelRoom",
-        name: "Asma — Triple Room",
-        description:
-          "Spacious triple room ideal for families or small groups, with private patio, rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From 180 € per night.",
-        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3 },
-        bed: [
-          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
-          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Single" },
-        ],
         offers: {
           "@type": "Offer",
           priceSpecification: {
@@ -112,19 +109,39 @@ export function getLodgingBusinessSchema() {
       },
       {
         "@type": "HotelRoom",
-        name: "Douiria — Private Family Suite",
+        name: "Asma — Triple Room",
         description:
-          "Traditional Moroccan Douiria suite featuring private independent access, direct rooftop terrace access, and two interconnected rooms accommodating up to 6 guests (2 queen beds and 2 sofa beds). Ideal for families. From 350 € per night.",
-        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 6 },
+          "Spacious triple room ideal for families or small groups, with private patio, rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From 200 € per night.",
+        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3 },
         bed: [
-          { "@type": "BedDetails", numberOfBeds: 2, typeOfBed: "Queen" },
-          { "@type": "BedDetails", numberOfBeds: 2, typeOfBed: "Sofa Bed" },
+          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
+          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Single" },
         ],
         offers: {
           "@type": "Offer",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: 350,
+            price: 200,
+            priceCurrency: "EUR",
+            unitText: "night",
+          },
+        },
+      },
+      {
+        "@type": "HotelRoom",
+        name: "Suite Della",
+        description:
+          "Traditional Moroccan suite accommodating up to 3 guests, featuring direct rooftop terrace access, heated floors, and authentic artisanal decor. From 250 € per night.",
+        occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3 },
+        bed: [
+          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Queen" },
+          { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Sofa Bed" },
+        ],
+        offers: {
+          "@type": "Offer",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: 250,
             priceCurrency: "EUR",
             unitText: "night",
           },

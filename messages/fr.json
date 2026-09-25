@@ -76,28 +76,38 @@
   "RoomsSection": {
     "eyebrow": "Les Chambres",
     "heading": "Votre Sanctuaire Privé",
-    "subheading": "4 Chambres & Suites Disponibles — chacune un havre de confort et de charme marocains.",
+    "subheading": "5 Chambres & Suites Disponibles — chacune un havre de confort et de charme marocains.",
     "viewRoom": "Voir la Chambre",
     "rooms": {
       "lina": {
         "name": "Lina",
         "description": "Une chambre double élégante au design marocain traditionnel, avec patio privé et tout le confort moderne.",
-        "price": "À partir de 150 € / nuit"
+        "price": "À partir de 160 € / nuit"
+      },
+      "maya": {
+        "name": "Maya",
+        "description": "Une chambre double paisible aux finitions marocaines artisanales, avec plancher chauffant et salle de bain privée.",
+        "price": "À partir de 160 € / nuit"
       },
       "amel": {
         "name": "Amel",
         "description": "Une Double Deluxe spacieuse avec finitions haut de gamme, plancher chauffant et accès direct à la piscine chauffée.",
-        "price": "À partir de 170 € / nuit"
+        "price": "À partir de 180 € / nuit"
       },
       "asma": {
         "name": "Asma",
         "description": "Une triple généreuse idéale pour les familles ou groupes d'amis, avec patio privé, accès au toit-terrasse et salon avec cheminée.",
-        "price": "À partir de 180 € / nuit"
+        "price": "À partir de 200 € / nuit"
+      },
+      "della": {
+        "name": "Suite Della",
+        "description": "Une suite élégante et spacieuse pouvant accueillir jusqu'à 3 personnes, avec accès direct au toit-terrasse, sol chauffant et finitions marocaines raffinées.",
+        "price": "À partir de 250 € / nuit"
       },
       "douiria": {
-        "name": "Douiria",
-        "description": "Une suite familiale indépendante traditionnelle de 2 pièces pour jusqu'à 6 personnes, avec entrée privée et accès direct à la terrasse.",
-        "price": "À partir de 350 € / nuit"
+        "name": "Suite Della",
+        "description": "Une suite élégante et spacieuse pouvant accueillir jusqu'à 3 personnes, avec accès direct au toit-terrasse, sol chauffant et finitions marocaines raffinées.",
+        "price": "À partir de 250 € / nuit"
       }
     }
   },
@@ -203,9 +213,11 @@
     "roomPreference": "Préférence de Chambre",
     "noPreference": "Aucune préférence",
     "roomLina": "Lina — Chambre Double",
+    "roomMaya": "Maya — Chambre Double",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Chambre Triple",
-    "roomDouiria": "Douiria — Suite Familiale (2 Pièces)",
+    "roomDella": "Suite Della (Jusqu'à 3 Personnes)",
+    "roomDouiria": "Suite Della (Jusqu'à 3 Personnes)",
     "message": "Demandes Spéciales / Message",
     "messagePlaceholder": "Demandes spéciales ou questions...",
     "submit": "Envoyer la Demande de Réservation",
@@ -359,6 +371,20 @@
         "f8": "Salon Cosy avec Cheminée",
         "f9": "Petit-Déjeuner Marocain Inclus"
       },
+      "maya": {
+        "name": "Chambre Maya — Chambre Double",
+        "description": "Un havre de paix alliant style artisanal marocain et confort moderne. Avec plancher chauffant, literie raffinée et ambiance apaisante pour une détente totale.",
+        "capacity": "2 Personnes",
+        "f1": "Climatisation & Chauffage",
+        "f2": "Plancher Chauffant",
+        "f3": "Salle de Bain Privée & Douche",
+        "f4": "Coffre-Fort & Armoire",
+        "f5": "Accès Toit-Terrasse",
+        "f6": "Piscine Chauffée",
+        "f7": "Accès Patio Privé",
+        "f8": "Salon Cosy avec Cheminée",
+        "f9": "Petit-Déjeuner Marocain Inclus"
+      },
       "amel": {
         "name": "Amel — Double Deluxe",
         "description": "Une Double Deluxe généreuse aux finitions soignées, avec plancher chauffant. Profitez de la piscine chauffée ou détendez-vous au coin cheminée.",
@@ -387,18 +413,32 @@
         "f8": "Salon Cosy avec Cheminée",
         "f9": "Petit-Déjeuner Marocain Inclus"
       },
-      "douiria": {
-        "name": "Douiria — Suite Familiale Privée (2 Pièces)",
-        "description": "Une Douiria traditionnelle marocaine offrant une totale indépendance avec sa propre entrée privée et un accès direct au toit-terrasse. Composée de 2 pièces communicantes (une pièce pour 4 personnes avec 1 lit queen-size + 2 banquettes-lits, et une seconde pour 2 personnes avec 1 lit queen-size), elle est conçue pour accueillir confortablement jusqu'à 6 personnes — le choix idéal pour les familles.",
-        "capacity": "Jusqu'à 6 Personnes (2 Pièces)",
+      "della": {
+        "name": "Suite Della",
+        "description": "Une suite marocaine spacieuse et raffinée pouvant accueillir jusqu'à 3 personnes. Elle propose un artisanat soigné, une literie de grand confort, un sol chauffant et un accès direct au toit-terrasse et au bassin chauffé.",
+        "capacity": "Jusqu'à 3 Personnes",
         "f1": "Climatisation & Chauffage",
         "f2": "Plancher Chauffant",
         "f3": "Salle de Bain Privée & Douche",
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Direct au Toit-Terrasse",
         "f6": "Accès Piscine Chauffée",
-        "f7": "Entrée & Accès Privé Indépendant",
-        "f8": "2 Pièces (2 Lits Queen + 2 Banquettes)",
+        "f7": "Accès Patio Privé",
+        "f8": "Suite Spacieuse (Jusqu'à 3 Personnes)",
+        "f9": "Petit-Déjeuner Marocain Inclus"
+      },
+      "douiria": {
+        "name": "Suite Della",
+        "description": "Une suite marocaine spacieuse et raffinée pouvant accueillir jusqu'à 3 personnes. Elle propose un artisanat soigné, une literie de grand confort, un sol chauffant et un accès direct au toit-terrasse et au bassin chauffé.",
+        "capacity": "Jusqu'à 3 Personnes",
+        "f1": "Climatisation & Chauffage",
+        "f2": "Plancher Chauffant",
+        "f3": "Salle de Bain Privée & Douche",
+        "f4": "Coffre-Fort & Armoire",
+        "f5": "Accès Direct au Toit-Terrasse",
+        "f6": "Accès Piscine Chauffée",
+        "f7": "Accès Patio Privé",
+        "f8": "Suite Spacieuse (Jusqu'à 3 Personnes)",
         "f9": "Petit-Déjeuner Marocain Inclus"
       }
     }
@@ -440,9 +480,11 @@
     "roomPlaceholder": "Choisir une chambre",
     "roomRequired": "Veuillez choisir une chambre",
     "roomLina": "Lina — Chambre Double",
+    "roomMaya": "Maya — Chambre Double",
     "roomAmel": "Amel — Double Deluxe",
     "roomAsma": "Asma — Chambre Triple",
-    "roomDouiria": "Douiria — Suite Familiale (2 Pièces)",
+    "roomDella": "Suite Della (Jusqu'à 3 Personnes)",
+    "roomDouiria": "Suite Della (Jusqu'à 3 Personnes)",
     "fullName": "Nom Complet *",
     "fullNamePlaceholder": "Votre nom complet",
     "fullNameRequired": "Le nom complet est obligatoire",
@@ -727,7 +769,7 @@
     },
     "rooms": {
       "title": "Chambres & Suites — Riad Della",
-      "description": "Découvrez nos chambres et suites au Riad Della — Lina, Amel, Asma et la Suite Familiale Douiria — chacune avec plancher chauffant, accès privé et piscine chauffée."
+      "description": "Découvrez nos chambres et suites au Riad Della — Lina, Maya, Amel, Asma et la Suite Della — chacune avec plancher chauffant, accès privé et piscine chauffée."
     },
     "transportation": {
       "title": "Transport — Riad Della",

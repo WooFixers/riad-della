@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { format } from "date-fns";
+import { format, startOfDay } from "date-fns";
 import { CalendarIcon, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "@/hooks/use-toast";
@@ -47,6 +47,8 @@ interface BookingDialogProps {
 export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
   const [open, setOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [checkInOpen, setCheckInOpen] = useState(false);
+  const [checkOutOpen, setCheckOutOpen] = useState(false);
   const t = useTranslations("BookingDialog");
 
   const formSchema = z.object({
@@ -142,7 +144,7 @@ export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
               <FormField control={form.control} name="checkIn" render={({ field }) => (
                 <FormItem className="flex flex-col">
                   <FormLabel>{t("checkIn")}</FormLabel>
-                  <Popover>
+                  <Popover open={checkInOpen} onOpenChange={setCheckInOpen}>
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
@@ -158,8 +160,20 @@ export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
                       <Calendar
                         mode="single"
                         selected={field.value}
-                        onSelect={field.onChange}
-                        disabled={(date) => date < new Date()}
+                        onSelect={(date) => {
+                          field.onChange(date);
+                          if (date) {
+                            setCheckInOpen(false);
+                            const currentCheckOut = form.getValues("checkOut");
+                            if (currentCheckOut && currentCheckOut <= date) {
+                              form.setValue("checkOut", undefined as unknown as Date);
+                            }
+                            setTimeout(() => {
+                              setCheckOutOpen(true);
+                            }, 150);
+                          }
+                        }}
+                        disabled={(date) => date < startOfDay(new Date())}
                         initialFocus
                         className="p-3 pointer-events-auto"
                       />
@@ -171,7 +185,7 @@ export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
               <FormField control={form.control} name="checkOut" render={({ field }) => (
                 <FormItem className="flex flex-col">
                   <FormLabel>{t("checkOut")}</FormLabel>
-                  <Popover>
+                  <Popover open={checkOutOpen} onOpenChange={setCheckOutOpen}>
                     <PopoverTrigger asChild>
                       <FormControl>
                         <Button
@@ -187,8 +201,20 @@ export function BookingDialog({ children, onBeforeOpen }: BookingDialogProps) {
                       <Calendar
                         mode="single"
                         selected={field.value}
-                        onSelect={field.onChange}
-                        disabled={(date) => date < new Date()}
+                        defaultMonth={field.value || form.getValues("checkIn") || new Date()}
+                        onSelect={(date) => {
+                          field.onChange(date);
+                          if (date) {
+                            setCheckOutOpen(false);
+                          }
+                        }}
+                        disabled={(date) => {
+                          const checkIn = form.getValues("checkIn");
+                          if (checkIn) {
+                            return date <= checkIn;
+                          }
+                          return date < startOfDay(new Date());
+                        }}
                         initialFocus
                         className="p-3 pointer-events-auto"
                       />
