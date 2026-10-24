@@ -81,7 +81,7 @@
     "rooms": {
       "lina": {
         "name": "Lina",
-        "description": "An elegant double room with traditional Moroccan design, a private patio, and all modern comforts.",
+        "description": "An elegant double room with traditional Moroccan design and all modern comforts.",
         "price": "From 160 € / night"
       },
       "maya": {
@@ -96,7 +96,7 @@
       },
       "asma": {
         "name": "Asma",
-        "description": "A generous triple room for families or friends, with a private patio, rooftop access, and a cozy fireplace lounge.",
+        "description": "A generous triple room for families or friends, with rooftop access and a cozy fireplace lounge.",
         "price": "From 200 € / night"
       },
       "della": {
@@ -190,8 +190,8 @@
   "ReservationForm": {
     "heading": "Reservation Request",
     "subheading": "Fill in the details below and we'll get back to you promptly.",
-    "directBenefitsTitle": "Book Direct Guarantee & Perks",
-    "directBenefitsDescription": "Direct bookings guarantee the best available rate with no intermediary fees. Enjoy a complimentary private airport transfer when you stay 3 nights or more.",
+    "directBenefitsTitle": "Book Direct Guarantee",
+    "directBenefitsDescription": "Direct bookings guarantee the best available rate with no intermediary fees.",
     "fullName": "Full Name *",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",
@@ -359,7 +359,7 @@
     "rooms": {
       "lina": {
         "name": "Lina — Double Room",
-        "description": "An elegant double room inspired by traditional Moroccan craftsmanship. Warm textiles, hand-carved details, and a private patio invite you to slow down and rest.",
+        "description": "An elegant double room inspired by traditional Moroccan craftsmanship. Warm textiles, hand-carved details, and serene comfort invite you to slow down and rest.",
         "capacity": "2 Guests",
         "f1": "AC & Heating",
         "f2": "Heated Floor",
@@ -367,9 +367,8 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Rooftop Terrace Access",
         "f6": "Plunging Heated Pool",
-        "f7": "Private Patio",
-        "f8": "Cozy Lounge with Fireplace",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Cozy Lounge with Fireplace",
+        "f8": "Moroccan Breakfast Included"
       },
       "maya": {
         "name": "Room Maya — Double Room",
@@ -381,9 +380,8 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Rooftop Terrace Access",
         "f6": "Plunging Heated Pool",
-        "f7": "Private Patio Access",
-        "f8": "Cozy Lounge with Fireplace",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Cozy Lounge with Fireplace",
+        "f8": "Moroccan Breakfast Included"
       },
       "amel": {
         "name": "Amel — Double Deluxe",
@@ -395,13 +393,12 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Rooftop Terrace Access",
         "f6": "Plunging Heated Pool",
-        "f7": "Private Patio",
-        "f8": "Cozy Lounge with Fireplace",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Cozy Lounge with Fireplace",
+        "f8": "Moroccan Breakfast Included"
       },
       "asma": {
         "name": "Asma — Triple Room",
-        "description": "Perfect for families or a group of friends, Asma offers three beds, a private patio, and easy access to the rooftop terrace and the shared fireplace lounge.",
+        "description": "Perfect for families or a group of friends, Asma offers three beds and easy access to the rooftop terrace and the shared fireplace lounge.",
         "capacity": "3 Guests",
         "f1": "AC & Heating",
         "f2": "Heated Floor",
@@ -409,9 +406,8 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Rooftop Terrace Access",
         "f6": "Plunging Heated Pool",
-        "f7": "Private Patio",
-        "f8": "Cozy Lounge with Fireplace",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Cozy Lounge with Fireplace",
+        "f8": "Moroccan Breakfast Included"
       },
       "della": {
         "name": "Suite Della",
@@ -423,9 +419,8 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Direct Rooftop Terrace Access",
         "f6": "Plunging Heated Pool Access",
-        "f7": "Private Patio Access",
-        "f8": "Spacious Suite (Up to 3 Guests)",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Spacious Suite (Up to 3 Guests)",
+        "f8": "Moroccan Breakfast Included"
       },
       "douiria": {
         "name": "Suite Della",
@@ -437,9 +432,8 @@
         "f4": "In-Room Safe & Closet",
         "f5": "Direct Rooftop Terrace Access",
         "f6": "Plunging Heated Pool Access",
-        "f7": "Private Patio Access",
-        "f8": "Spacious Suite (Up to 3 Guests)",
-        "f9": "Moroccan Breakfast Included"
+        "f7": "Spacious Suite (Up to 3 Guests)",
+        "f8": "Moroccan Breakfast Included"
       }
     }
   },
@@ -452,7 +446,7 @@
     "safeCloset": "In-Room Safe & Closet",
     "rooftopAccess": "Rooftop Terrace",
     "heatedPool": "Plunging Heated Pool",
-    "patio": "Private Patio",
+    "breakfast": "Moroccan Breakfast Included",
     "lounge": "Cozy Lounge & Fireplace"
   },
   "RiadAtmosphere": {
@@ -474,8 +468,6 @@
     "directBenefitsTitle": "Direct Booking Advantages",
     "bestPriceTitle": "Best Price Guaranteed",
     "bestPriceSubtitle": "Lowest rates guaranteed with zero intermediary fees.",
-    "transferTitle": "Free Airport Transfer",
-    "transferSubtitle": "Complimentary private transfer on stays of 3+ nights.",
     "room": "Room *",
     "roomPlaceholder": "Select a room",
     "roomRequired": "Please select a room",
@@ -783,7 +775,6 @@
   "BookingDialog": {
     "title": "Check Availability",
     "description": "Fill in your details and we'll get back to you within 24 hours.",
-    "directBookingPerk": "Best Price Guaranteed • Free Airport Transfer on stays of 3+ nights when booking directly with us.",
     "fullName": "Full Name",
     "fullNamePlaceholder": "Your full name",
     "fullNameRequired": "Full name is required",

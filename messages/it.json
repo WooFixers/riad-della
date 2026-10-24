@@ -81,7 +81,7 @@
     "rooms": {
       "lina": {
         "name": "Lina",
-        "description": "Un'elegante camera doppia con design tradizionale marocchino, patio privato e tutti i comfort moderni.",
+        "description": "Un'elegante camera doppia con design tradizionale marocchino e tutti i comfort moderni.",
         "price": "A partire da 160 € / notte"
       },
       "maya": {
@@ -96,7 +96,7 @@
       },
       "asma": {
         "name": "Asma",
-        "description": "Una generosa tripla ideale per famiglie o gruppi di amici, con patio privato, accesso alla terrazza e salotto con camino.",
+        "description": "Una generosa tripla ideale per famiglie o gruppi di amici, con accesso alla terrazza e salotto con camino.",
         "price": "A partire da 200 € / notte"
       },
       "della": {
@@ -190,8 +190,8 @@
   "ReservationForm": {
     "heading": "Richiesta di Prenotazione",
     "subheading": "Compila i dettagli qui sotto e ti risponderemo al più presto.",
-    "directBenefitsTitle": "Garanzia e Vantaggi della Prenotazione Diretta",
-    "directBenefitsDescription": "Prenotare direttamente con noi garantisce la migliore tariffa senza costi di intermediazione, oltre al trasferimento aeroportuale privato gratuito per soggiorni di 3 o più notti.",
+    "directBenefitsTitle": "Garanzia della Prenotazione Diretta",
+    "directBenefitsDescription": "Prenotare direttamente con noi garantisce la migliore tariffa senza costi di intermediazione.",
     "fullName": "Nome Completo *",
     "fullNamePlaceholder": "Il tuo nome completo",
     "fullNameRequired": "Il nome completo è obbligatorio",
@@ -359,7 +359,7 @@
     "rooms": {
       "lina": {
         "name": "Lina — Camera Doppia",
-        "description": "Un'elegante camera doppia di ispirazione artigianale marocchina. Tessuti caldi, dettagli intagliati e un patio privato per ritrovare la calma.",
+        "description": "Un'elegante camera doppia di ispirazione artigianale marocchina. Tessuti caldi, dettagli intagliati e grande comfort per ritrovare la calma.",
         "capacity": "2 Ospiti",
         "f1": "Aria Condizionata & Riscaldamento",
         "f2": "Pavimento Riscaldato",
@@ -367,9 +367,8 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso alla Terrazza",
         "f6": "Piscina Riscaldata",
-        "f7": "Patio Privato",
-        "f8": "Salotto Accogliente con Camino",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Salotto Accogliente con Camino",
+        "f8": "Colazione Marocchina Inclusa"
       },
       "maya": {
         "name": "Camera Maya — Camera Matrimoniale",
@@ -381,9 +380,8 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso alla Terrazza",
         "f6": "Piscina Riscaldata",
-        "f7": "Accesso Patio Privato",
-        "f8": "Salotto Accogliente con Camino",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Salotto Accogliente con Camino",
+        "f8": "Colazione Marocchina Inclusa"
       },
       "amel": {
         "name": "Amel — Double Deluxe",
@@ -395,13 +393,12 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso alla Terrazza",
         "f6": "Piscina Riscaldata",
-        "f7": "Patio Privato",
-        "f8": "Salotto Accogliente con Camino",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Salotto Accogliente con Camino",
+        "f8": "Colazione Marocchina Inclusa"
       },
       "asma": {
         "name": "Asma — Camera Tripla",
-        "description": "Perfetta per famiglie o gruppi di amici, Asma offre tre letti, patio privato, accesso alla terrazza e al salotto condiviso con camino.",
+        "description": "Perfetta per famiglie o gruppi di amici, Asma offre tre letti, accesso alla terrazza e al salotto condiviso con camino.",
         "capacity": "3 Ospiti",
         "f1": "Aria Condizionata & Riscaldamento",
         "f2": "Pavimento Riscaldato",
@@ -409,9 +406,8 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso alla Terrazza",
         "f6": "Piscina Riscaldata",
-        "f7": "Patio Privato",
-        "f8": "Salotto Accogliente con Camino",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Salotto Accogliente con Camino",
+        "f8": "Colazione Marocchina Inclusa"
       },
       "della": {
         "name": "Suite Della",
@@ -423,9 +419,8 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso Diretto alla Terrazza",
         "f6": "Accesso Piscina Riscaldata",
-        "f7": "Accesso Patio Privato",
-        "f8": "Suite Spaziosa (Fino a 3 Ospiti)",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Suite Spaziosa (Fino a 3 Ospiti)",
+        "f8": "Colazione Marocchina Inclusa"
       },
       "douiria": {
         "name": "Suite Della",
@@ -437,9 +432,8 @@
         "f4": "Cassaforte & Armadio",
         "f5": "Accesso Diretto alla Terrazza",
         "f6": "Accesso Piscina Riscaldata",
-        "f7": "Accesso Patio Privato",
-        "f8": "Suite Spaziosa (Fino a 3 Ospiti)",
-        "f9": "Colazione Marocchina Inclusa"
+        "f7": "Suite Spaziosa (Fino a 3 Ospiti)",
+        "f8": "Colazione Marocchina Inclusa"
       }
     }
   },
@@ -452,7 +446,7 @@
     "safeCloset": "Cassaforte & Armadio",
     "rooftopAccess": "Accesso alla Terrazza",
     "heatedPool": "Piscina Riscaldata",
-    "patio": "Patio Privato",
+    "breakfast": "Colazione Marocchina Inclusa",
     "lounge": "Salotto Accogliente & Camino"
   },
   "RiadAtmosphere": {
@@ -474,8 +468,6 @@
     "directBenefitsTitle": "Vantaggi della Prenotazione Diretta",
     "bestPriceTitle": "Miglior Prezzo Garantito",
     "bestPriceSubtitle": "La tariffa più conveniente garantita, senza commissioni di intermediari.",
-    "transferTitle": "Trasferimento Aeroporto Gratuito",
-    "transferSubtitle": "Trasferimento privato gratuito per soggiorni di 3 o più notti.",
     "room": "Camera *",
     "roomPlaceholder": "Seleziona una camera",
     "roomRequired": "Seleziona una camera",
@@ -783,7 +775,6 @@
   "BookingDialog": {
     "title": "Verifica disponibilità",
     "description": "Compila i tuoi dati e ti risponderemo entro 24 ore.",
-    "directBookingPerk": "Miglior Prezzo Garantito • Trasferimento Aeroporto Gratuito per soggiorni da 3+ notti prenotando direttamente con noi.",
     "fullName": "Nome completo",
     "fullNamePlaceholder": "Il tuo nome completo",
     "fullNameRequired": "Il nome è obbligatorio",

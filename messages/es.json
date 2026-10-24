@@ -81,7 +81,7 @@
     "rooms": {
       "lina": {
         "name": "Lina",
-        "description": "Una elegante habitación doble con diseño marroquí tradicional, patio privado y todas las comodidades modernas.",
+        "description": "Una elegante habitación doble con diseño marroquí tradicional y todas las comodidades modernas.",
         "price": "Desde 160 € / noche"
       },
       "maya": {
@@ -96,7 +96,7 @@
       },
       "asma": {
         "name": "Asma",
-        "description": "Una generosa habitación triple ideal para familias o grupos de amigos, con patio privado, acceso a la azotea y salón con chimenea.",
+        "description": "Una generosa habitación triple ideal para familias o grupos de amigos, con acceso a la azotea y salón con chimenea.",
         "price": "Desde 200 € / noche"
       },
       "della": {
@@ -190,8 +190,8 @@
   "ReservationForm": {
     "heading": "Solicitud de Reserva",
     "subheading": "Complete los datos a continuación y le responderemos con prontitud.",
-    "directBenefitsTitle": "Garantía y Ventajas de Reserva Directa",
-    "directBenefitsDescription": "Reservar directamente con nosotros le garantiza el mejor precio sin comisiones, además de traslado privado al aeropuerto gratuito para estancias de 3 o más noches.",
+    "directBenefitsTitle": "Garantía de Reserva Directa",
+    "directBenefitsDescription": "Reservar directamente con nosotros le garantiza el mejor precio sin comisiones.",
     "fullName": "Nombre Completo *",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre completo es obligatorio",
@@ -359,7 +359,7 @@
     "rooms": {
       "lina": {
         "name": "Lina — Habitación Doble",
-        "description": "Una elegante habitación doble de inspiración artesanal marroquí. Textiles cálidos, detalles tallados y un patio privado para un descanso plácido.",
+        "description": "Una elegante habitación doble de inspiración artesanal marroquí. Textiles cálidos, detalles tallados y descanso sereno para una relajación total.",
         "capacity": "2 Huéspedes",
         "f1": "Aire Acondicionado & Calefacción",
         "f2": "Suelo Radiante",
@@ -367,9 +367,8 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso a la Azotea",
         "f6": "Piscina Climatizada",
-        "f7": "Patio Privado",
-        "f8": "Salón Acogedor con Chimenea",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Salón Acogedor con Chimenea",
+        "f8": "Desayuno Marroquí Incluido"
       },
       "maya": {
         "name": "Habitación Maya — Habitación Doble",
@@ -381,9 +380,8 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso a la Azotea",
         "f6": "Piscina Climatizada",
-        "f7": "Acceso a Patio Privado",
-        "f8": "Salón Acogedor con Chimenea",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Salón Acogedor con Chimenea",
+        "f8": "Desayuno Marroquí Incluido"
       },
       "amel": {
         "name": "Amel — Doble Deluxe",
@@ -395,13 +393,12 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso a la Azotea",
         "f6": "Piscina Climatizada",
-        "f7": "Patio Privado",
-        "f8": "Salón Acogedor con Chimenea",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Salón Acogedor con Chimenea",
+        "f8": "Desayuno Marroquí Incluido"
       },
       "asma": {
         "name": "Asma — Habitación Triple",
-        "description": "Perfecta para familias o grupos de amigos, Asma ofrece tres camas, patio privado y acceso a la azotea y al salón compartido con chimenea.",
+        "description": "Perfecta para familias o grupos de amigos, Asma ofrece tres camas y acceso a la azotea y al salón compartido con chimenea.",
         "capacity": "3 Huéspedes",
         "f1": "Aire Acondicionado & Calefacción",
         "f2": "Suelo Radiante",
@@ -409,9 +406,8 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso a la Azotea",
         "f6": "Piscina Climatizada",
-        "f7": "Patio Privado",
-        "f8": "Salón Acogedor con Chimenea",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Salón Acogedor con Chimenea",
+        "f8": "Desayuno Marroquí Incluido"
       },
       "della": {
         "name": "Suite Della",
@@ -423,9 +419,8 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso Directo a la Azotea",
         "f6": "Acceso a la Piscina Climatizada",
-        "f7": "Acceso a Patio Privado",
-        "f8": "Suite Espaciosa (Hasta 3 Huéspedes)",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Suite Espaciosa (Hasta 3 Huéspedes)",
+        "f8": "Desayuno Marroquí Incluido"
       },
       "douiria": {
         "name": "Suite Della",
@@ -437,9 +432,8 @@
         "f4": "Caja Fuerte & Armario",
         "f5": "Acceso Directo a la Azotea",
         "f6": "Acceso a la Piscina Climatizada",
-        "f7": "Acceso a Patio Privado",
-        "f8": "Suite Espaciosa (Hasta 3 Huéspedes)",
-        "f9": "Desayuno Marroquí Incluido"
+        "f7": "Suite Espaciosa (Hasta 3 Huéspedes)",
+        "f8": "Desayuno Marroquí Incluido"
       }
     }
   },
@@ -452,7 +446,7 @@
     "safeCloset": "Caja Fuerte & Armario",
     "rooftopAccess": "Acceso a la Azotea",
     "heatedPool": "Piscina Climatizada",
-    "patio": "Patio Privado",
+    "breakfast": "Desayuno Marroquí Incluido",
     "lounge": "Salón Acogedor & Chimenea"
   },
   "RiadAtmosphere": {
@@ -474,8 +468,6 @@
     "directBenefitsTitle": "Ventajas de Reservar Directamente",
     "bestPriceTitle": "Mejor Precio Garantizado",
     "bestPriceSubtitle": "La tarifa más baja garantizada sin comisiones de intermediarios.",
-    "transferTitle": "Traslado al Aeropuerto Gratis",
-    "transferSubtitle": "Traslado privado gratuito en estancias de 3 noches o más.",
     "room": "Habitación *",
     "roomPlaceholder": "Seleccionar habitación",
     "roomRequired": "Por favor, seleccione una habitación",
@@ -783,7 +775,6 @@
   "BookingDialog": {
     "title": "Verificar disponibilidad",
     "description": "Rellene sus datos y nos pondremos en contacto en 24 horas.",
-    "directBookingPerk": "Mejor Precio Garantizado • Traslado al Aeropuerto Gratis a partir de 3 noches reservando directamente con nosotros.",
     "fullName": "Nombre completo",
     "fullNamePlaceholder": "Su nombre completo",
     "fullNameRequired": "El nombre es obligatorio",

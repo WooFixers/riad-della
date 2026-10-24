@@ -48,7 +48,6 @@ export function getLodgingBusinessSchema() {
       { "@type": "LocationFeatureSpecification", name: "Moroccan Breakfast Included", value: true },
       { "@type": "LocationFeatureSpecification", name: "Air Conditioning", value: true },
       { "@type": "LocationFeatureSpecification", name: "Heated Floors", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Private Patio", value: true },
       { "@type": "LocationFeatureSpecification", name: "Free WiFi", value: true },
       { "@type": "LocationFeatureSpecification", name: "Airport Transfer", value: true },
       { "@type": "LocationFeatureSpecification", name: "In-Room Safe", value: true },
@@ -60,7 +59,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Lina — Double Room",
         description:
-          "Traditional Moroccan design with a private patio, heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From 160 € per night.",
+          "Traditional Moroccan design with heated floor, en-suite bathroom, and access to the heated plunge pool. Perfect for couples. From 160 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
         offers: {
@@ -94,7 +93,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Amel — Double Deluxe",
         description:
-          "Premium Moroccan finishes, heated floor, direct pool access, private patio, and superior comfort. From 180 € per night.",
+          "Premium Moroccan finishes, heated floor, direct pool access, and superior comfort. From 180 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 2 },
         bed: { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },
         offers: {
@@ -111,7 +110,7 @@ export function getLodgingBusinessSchema() {
         "@type": "HotelRoom",
         name: "Asma — Triple Room",
         description:
-          "Spacious triple room ideal for families or small groups, with private patio, rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From 200 € per night.",
+          "Spacious triple room ideal for families or small groups, with rooftop access, fireplace lounge, and heated floor. Sleeps up to 3 guests. From 200 € per night.",
         occupancy: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3 },
         bed: [
           { "@type": "BedDetails", numberOfBeds: 1, typeOfBed: "Double" },

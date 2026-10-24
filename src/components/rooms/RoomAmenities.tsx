@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame } from "lucide-react";
+import { Wind, Waves, Bath, Shield, MountainSnow, Droplets, Coffee, Flame } from "lucide-react";
 
 const amenityData = [
   { key: "acHeating", icon: Wind },
@@ -11,7 +11,7 @@ const amenityData = [
   { key: "safeCloset", icon: Shield },
   { key: "rooftopAccess", icon: MountainSnow },
   { key: "heatedPool", icon: Droplets },
-  { key: "patio", icon: Flower2 },
+  { key: "breakfast", icon: Coffee },
   { key: "lounge", icon: Flame },
 ] as const;
 

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Users, Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee } from "lucide-react";
+import { Users, Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flame, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
@@ -29,8 +29,8 @@ import mayaBathroom from "@/assets/riad/maya/bathroom.webp";
 
 type RoomKey = "lina" | "maya" | "amel" | "asma" | "della";
 
-const featureIcons = [Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flower2, Flame, Coffee];
-const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"] as const;
+const featureIcons = [Wind, Waves, Bath, Shield, MountainSnow, Droplets, Flame, Coffee];
+const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8"] as const;
 
 const roomData: { key: RoomKey; images: { src: string }[] }[] = [
   { key: "lina", images: [linaBedroom1, linaBedroom2, linaBedroom3, linaBathroom1] },

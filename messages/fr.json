@@ -81,7 +81,7 @@
     "rooms": {
       "lina": {
         "name": "Lina",
-        "description": "Une chambre double élégante au design marocain traditionnel, avec patio privé et tout le confort moderne.",
+        "description": "Une chambre double élégante au design marocain traditionnel et tout le confort moderne.",
         "price": "À partir de 160 € / nuit"
       },
       "maya": {
@@ -96,7 +96,7 @@
       },
       "asma": {
         "name": "Asma",
-        "description": "Une triple généreuse idéale pour les familles ou groupes d'amis, avec patio privé, accès au toit-terrasse et salon avec cheminée.",
+        "description": "Une triple généreuse idéale pour les familles ou groupes d'amis, avec accès au toit-terrasse et salon avec cheminée.",
         "price": "À partir de 200 € / nuit"
       },
       "della": {
@@ -190,8 +190,8 @@
   "ReservationForm": {
     "heading": "Demande de Réservation",
     "subheading": "Remplissez les détails ci-dessous et nous vous répondrons rapidement.",
-    "directBenefitsTitle": "Garantie & Avantages Réservation Directe",
-    "directBenefitsDescription": "Réserver directement avec nous vous garantit le meilleur tarif sans commissions, ainsi qu'un transfert aéroport privé offert dès 3 nuits de séjour.",
+    "directBenefitsTitle": "Garantie Réservation Directe",
+    "directBenefitsDescription": "Réserver directement avec nous vous garantit le meilleur tarif sans commissions.",
     "fullName": "Nom Complet *",
     "fullNamePlaceholder": "Votre nom complet",
     "fullNameRequired": "Le nom complet est obligatoire",
@@ -359,7 +359,7 @@
     "rooms": {
       "lina": {
         "name": "Lina — Chambre Double",
-        "description": "Une chambre double élégante aux inspirations artisanales marocaines. Textiles chaleureux, détails sculptés et patio privé pour se ressourcer en toute sérénité.",
+        "description": "Une chambre double élégante aux inspirations artisanales marocaines. Textiles chaleureux, détails sculptés et confort serein pour se ressourcer en toute quiétude.",
         "capacity": "2 Personnes",
         "f1": "Climatisation & Chauffage",
         "f2": "Plancher Chauffant",
@@ -367,9 +367,8 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Toit-Terrasse",
         "f6": "Piscine Chauffée",
-        "f7": "Patio Privé",
-        "f8": "Salon Cosy avec Cheminée",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Salon Cosy avec Cheminée",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       },
       "maya": {
         "name": "Chambre Maya — Chambre Double",
@@ -381,9 +380,8 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Toit-Terrasse",
         "f6": "Piscine Chauffée",
-        "f7": "Accès Patio Privé",
-        "f8": "Salon Cosy avec Cheminée",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Salon Cosy avec Cheminée",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       },
       "amel": {
         "name": "Amel — Double Deluxe",
@@ -395,13 +393,12 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Toit-Terrasse",
         "f6": "Piscine Chauffée",
-        "f7": "Patio Privé",
-        "f8": "Salon Cosy avec Cheminée",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Salon Cosy avec Cheminée",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       },
       "asma": {
         "name": "Asma — Chambre Triple",
-        "description": "Idéale pour les familles ou groupes d'amis, Asma propose trois lits, un patio privé, l'accès au toit-terrasse et au salon partagé avec cheminée.",
+        "description": "Idéale pour les familles ou groupes d'amis, Asma propose trois lits, l'accès au toit-terrasse et au salon partagé avec cheminée.",
         "capacity": "3 Personnes",
         "f1": "Climatisation & Chauffage",
         "f2": "Plancher Chauffant",
@@ -409,9 +406,8 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Toit-Terrasse",
         "f6": "Piscine Chauffée",
-        "f7": "Patio Privé",
-        "f8": "Salon Cosy avec Cheminée",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Salon Cosy avec Cheminée",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       },
       "della": {
         "name": "Suite Della",
@@ -423,9 +419,8 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Direct au Toit-Terrasse",
         "f6": "Accès Piscine Chauffée",
-        "f7": "Accès Patio Privé",
-        "f8": "Suite Spacieuse (Jusqu'à 3 Personnes)",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Suite Spacieuse (Jusqu'à 3 Personnes)",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       },
       "douiria": {
         "name": "Suite Della",
@@ -437,9 +432,8 @@
         "f4": "Coffre-Fort & Armoire",
         "f5": "Accès Direct au Toit-Terrasse",
         "f6": "Accès Piscine Chauffée",
-        "f7": "Accès Patio Privé",
-        "f8": "Suite Spacieuse (Jusqu'à 3 Personnes)",
-        "f9": "Petit-Déjeuner Marocain Inclus"
+        "f7": "Suite Spacieuse (Jusqu'à 3 Personnes)",
+        "f8": "Petit-Déjeuner Marocain Inclus"
       }
     }
   },
@@ -452,7 +446,7 @@
     "safeCloset": "Coffre-Fort & Armoire",
     "rooftopAccess": "Accès Toit-Terrasse",
     "heatedPool": "Piscine Chauffée",
-    "patio": "Patio Privé",
+    "breakfast": "Petit-Déjeuner Marocain Inclus",
     "lounge": "Salon Cosy & Cheminée"
   },
   "RiadAtmosphere": {
@@ -474,8 +468,6 @@
     "directBenefitsTitle": "Avantages Réservation Directe",
     "bestPriceTitle": "Meilleur Tarif Garanti",
     "bestPriceSubtitle": "Le tarif le plus bas garanti sans frais d'intermédiaires.",
-    "transferTitle": "Transfert Aéroport Offert",
-    "transferSubtitle": "Transfert privé gratuit pour tout séjour de 3 nuits ou plus.",
     "room": "Chambre *",
     "roomPlaceholder": "Choisir une chambre",
     "roomRequired": "Veuillez choisir une chambre",
@@ -783,7 +775,6 @@
   "BookingDialog": {
     "title": "Vérifier la disponibilité",
     "description": "Remplissez vos coordonnées et nous vous répondrons dans les 24 heures.",
-    "directBookingPerk": "Meilleur Tarif Garanti • Transfert Aéroport Offert dès 3 nuits en réservant directement avec nous.",
     "fullName": "Nom complet",
     "fullNamePlaceholder": "Votre nom complet",
     "fullNameRequired": "Le nom est obligatoire",

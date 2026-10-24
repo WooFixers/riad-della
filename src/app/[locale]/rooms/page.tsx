@@ -14,11 +14,11 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://riaddella.com";
 export const metadata: Metadata = {
   title: "Rooms & Suites",
   description:
-    "5 rooms & suites in Marrakech's Medina — Lina (from 160 €), Maya (from 160 €), Amel Deluxe (from 180 €), Asma Triple (from 200 €), and Suite Della (from 250 €). Heated floors, private patio, plunge pool & Moroccan breakfast included.",
+    "5 rooms & suites in Marrakech's Medina — Lina (from 160 €), Maya (from 160 €), Amel Deluxe (from 180 €), Asma Triple (from 200 €), and Suite Della (from 250 €). Heated floors, plunge pool & Moroccan breakfast included.",
   openGraph: {
     title: "Rooms & Suites at Riad Della — Marrakech Medina",
     description:
-      "5 beautifully appointed rooms & suites in Marrakech's Medina. Heated floors, private patios, plunge pool & Moroccan breakfast included. From 160 €/night.",
+      "5 beautifully appointed rooms & suites in Marrakech's Medina. Heated floors, plunge pool & Moroccan breakfast included. From 160 €/night.",
     url: "/rooms",
     type: "website",
   },
@@ -48,12 +48,12 @@ const faqs = [
   {
     question: "What amenities are included in each room?",
     answer:
-      "Every room at Riad Della includes air conditioning, heated floors, a private en-suite bathroom, in-room safe, wardrobe, private patio or independent access, access to the heated plunge pool, rooftop terrace, and a cozy fireplace lounge — plus Moroccan breakfast every morning.",
+      "Every room at Riad Della includes air conditioning, heated floors, a private en-suite bathroom, in-room safe, wardrobe, access to the heated plunge pool, rooftop terrace, and a cozy fireplace lounge — plus Moroccan breakfast every morning.",
   },
   {
     question: "What are the benefits of booking directly with Riad Della?",
     answer:
-      "Booking directly with us guarantees the best available price with zero intermediary fees, plus a complimentary private airport transfer for any stay of 3 nights or more.",
+      "Booking directly with us guarantees the best available price with zero intermediary fees.",
   },
 ];
 
